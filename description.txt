@@ -1,0 +1,53 @@
+Hello and welcome to the Illuminum Mod!
+
+This is a very work in progress content mod that just adds some simple content. Nothing too fancy!
+
+Currently there are 150+ Items total in this mod, Including:
+9 Armor Sets
+41 Accessories
+17 Materials
+3 Tools
+2 Crafting Station
+4 Enemies
+2 Critters
+68 Weapons - 37 Melee - 14 Ranged - 9 Magic - 8 Summoner
+2 Blocks
+1 Boss
+1 Biome
+1 Town NPC
+2 Exclusive Themes
+
+Currently the mod is kinda small but I will be trying to update it as much as I can to add some interesting content for your everyday modded runs!
+
+Mod Team
+
+Waasephi - Mod Creator, Coder, Spriter, Wiki Editor, Tester, Certified Idiot, and whatever you want me to be baby...
+Nimta - Tester
+Megaswave - Tester
+Brodtyv - Composer
+Stardust - Coder
+
+Special Thanks
+CrusaderAether - Wiki Editor
+
+I am looking for coders and spriters to help me with this project! If you are interested please let me know in my discord
+
+Thank you for stopping by, I greatly appreciate it and hope you enjoy the content provided!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Removed Herobrine

@@ -1,0 +1,4 @@
+displayName = [c/bc3ab3:Illuminum Mod]
+author = Waasephi
+version = 0.3
+homepage = https://forums.terraria.org/index.php?threads/illuminum-mod.101729/
