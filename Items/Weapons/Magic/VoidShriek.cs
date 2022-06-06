@@ -33,7 +33,7 @@ namespace Illuminum.Items.Weapons.Magic
 			Item.knockBack = 5;
 			Item.autoReuse = true;
 			Item.rare = ItemRarityID.Green;
-			Item.mana = 16;
+			Item.mana = 20;
 			Item.value = Item.sellPrice(gold: 7);
 		}
 
