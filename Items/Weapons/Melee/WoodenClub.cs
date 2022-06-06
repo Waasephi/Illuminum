@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using Microsoft.Xna.Framework;
 
 namespace Illuminum.Items.Weapons.Melee
 {
@@ -34,6 +35,8 @@ namespace Illuminum.Items.Weapons.Melee
 		{
 			SoundEngine.PlaySound(new("Illuminum/Sounds/Item/Bonk"), player.position);
 			target.AddBuff(BuffID.Confused, 180);
+
+			CombatText.NewText(target.getRect(), Color.Yellow, "Bonk", true, false);
 		}
 
 		public override void AddRecipes() 
