@@ -17,7 +17,7 @@ namespace Illuminum.Items.Consumables
 			// MinorStats, MediumStats, MajorStats, TipsyStats
 			// These correspond to the WellFed, WellFed2, WellFed3, and Tipsy buffs respectively.
 			// Make sure to match the tooltip with the buff you assign in SetDefaults
-			Tooltip.SetDefault("{$CommonItemTooltip.MajorStats}\n'Very filling,but are you sure you should be eathing this?'");
+			Tooltip.SetDefault("{$CommonItemTooltip.MajorStats}\n'Very filling, but are you sure you should be eathing this?'");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 5;
 
