@@ -4,7 +4,7 @@ using Illuminum.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.ModLoader.Utilities;
+using Illuminum.Items.Banners;
 
 namespace Illuminum.NPCs.Enemies
 {
@@ -21,8 +21,8 @@ namespace Illuminum.NPCs.Enemies
 			NPC.width = 30;
 			NPC.height = 18;
 			NPC.damage = 30;
-			NPC.lifeMax = 150;
-			NPC.life = 150;
+			NPC.lifeMax = 45;
+			NPC.life = 45;
 			NPC.defense = 1;
 			NPC.HitSound = SoundID.NPCHit1;
 			NPC.DeathSound = SoundID.NPCDeath1;
@@ -31,8 +31,8 @@ namespace Illuminum.NPCs.Enemies
 			NPC.aiStyle = 14;
 			AIType = NPCID.CaveBat;
 			AnimationType = NPCID.CaveBat;
-			/*banner = NPC.type;
-			bannerItem = ModContent.ItemType<QuartzSlimeBanner>();*/
+			Banner = NPC.type;
+			BannerItem = ModContent.ItemType<BlastBugBanner>();
 		}
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
@@ -62,6 +62,13 @@ namespace Illuminum.NPCs.Enemies
 			{
 				Dust dust = Dust.NewDustDirect(NPC.position, NPC.width + 4, NPC.height + 4, DustID.Lava, Main.rand.NextFloat(-2f, 2f), Main.rand.NextFloat(-2f, 2f));
 				dust.velocity *= 0.8f;
+			}
+			if (NPC.life <= 0)
+			{
+				for (int i = 0; i < 2; i++)
+				{
+					Gore.NewGore(NPC.GetSource_FromThis(), NPC.position, NPC.velocity, ModContent.Find<ModGore>("Illuminum/BlastBugGore" + (i + 1)).Type, 1);
+				}
 			}
 		}
 	}

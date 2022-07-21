@@ -16,8 +16,8 @@ namespace Illuminum.Items.Banners
         public override void SetDefaults()
         {
             Item.DefaultToPlaceableTile(ModContent.TileType<MosscreepBannerTile>(), 0);
-            Item.width = 12;
-            Item.height = 28;
+            Item.width = 16;
+            Item.height = 48;
             Item.maxStack = 99;
             Item.rare = ItemRarityID.Blue;
             Item.value = Item.buyPrice(0, 0, 10, 0);

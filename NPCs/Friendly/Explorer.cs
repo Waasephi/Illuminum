@@ -194,6 +194,11 @@ namespace Illuminum.NPCs.Friendly
 				shop.item[nextSlot].SetDefaults(2998);
 				nextSlot++;
 			}
+			if (NPC.downedQueenSlime)
+			{
+				shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalGuilt>());
+				nextSlot++;
+			}
 			if (NPC.downedMechBoss1)
 			{
 				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SteelPetal1>());
@@ -278,7 +283,7 @@ namespace Illuminum.NPCs.Friendly
 			{
 				return "That " + Main.npc[guideNPC].GivenName + " over there... He knows a bit too much about this world. Something is up with him. Keep an eye out okay?";
 			}
-			switch (Main.rand.Next(6))    //this are the messages when you talk to the npc
+			switch (Main.rand.Next(7))    //this are the messages when you talk to the npc
 			{
 				case 0:
 					return "You wanna buy something? These days I usually just stay around here so I dont have much use for any of it... Yes you still have to pay!";
@@ -297,6 +302,9 @@ namespace Illuminum.NPCs.Friendly
 
 				case 5:
 					return "Y'know I used to live in a far away land. Filled with glowing rock and destroyed cities. I wonder how its doing...";
+
+				case 6:
+					return "You want to know where to go? Figure it out yourself!";
 
 				default:
 					return "I don't know why i have all this random stuff... but its fun to collect them none the less!";

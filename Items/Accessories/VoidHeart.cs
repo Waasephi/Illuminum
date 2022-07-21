@@ -29,7 +29,7 @@ namespace Illuminum.Items.Accessories
 		public override void SetDefaults()
 		{
 			Item.width = 34;
-			Item.height = 32;
+			Item.height = 26;
 			Item.value = Item.sellPrice(gold: 10);
 			Item.rare = ItemRarityID.Cyan;
 			Item.accessory = true;
