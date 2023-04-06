@@ -1,6 +1,8 @@
-using Illuminum.Items.Materials;
-using Illuminum.Items.Accessories;
-using Illuminum.Items.Placeables;
+using Illuminum.Items.Materials.HM;
+using Illuminum.Items.Accessories.PreHM;
+using Illuminum.Items.Accessories.HM;
+using Illuminum.Items.Accessories.PostML;
+//using Illuminum.Items.Placeables;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -20,7 +22,7 @@ namespace Illuminum.NPCs.Friendly
 			public override void SetStaticDefaults()
 			{
 				// DisplayName automatically assigned from localization files, but the commented line below is the normal approach.
-				 DisplayName.SetDefault("Explorer");
+				 // DisplayName.SetDefault("Explorer");
 				Main.npcFrameCount[Type] = 25; // The amount of frames the NPC has
 
 				NPCID.Sets.ExtraFramesCount[Type] = 9; // Generally for Town NPCs, but this is how the NPC does extra things such as sitting in a chair and talking to other NPCs.
@@ -97,7 +99,7 @@ namespace Illuminum.NPCs.Friendly
 			// (simply checking NPC.IsABestiaryIconDummy and incrementing NPC.Rotation won't work here as it gets overridden by drawModifiers.Rotation each tick)
 			if (NPCID.Sets.NPCBestiaryDrawOffset.TryGetValue(Type, out NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers))
 			{
-				drawModifiers.Rotation += 0.001f;
+				//drawModifiers.Rotation += 0.001f;
 
 				// Replace the existing NPCBestiaryDrawModifiers with our new one with an adjusted rotation
 				NPCID.Sets.NPCBestiaryDrawOffset.Remove(Type);
@@ -107,9 +109,9 @@ namespace Illuminum.NPCs.Friendly
 			return true;
 		}
 
-		public override bool CanTownNPCSpawn(int numTownNPCs, int money) //Whether or not the conditions have been met for this town NPC to be able to move into town.
-		{
-			if (NPC.downedSlimeKing)  //so after the EoC is killed
+        public override bool CanTownNPCSpawn(int numTownNPCs, int money)
+        {
+			if (NPC.downedSlimeKing)
 			{
 				return true;
 			}
@@ -144,16 +146,16 @@ namespace Illuminum.NPCs.Friendly
 			button = "Shop";   //this defines the buy button name
 		}
 
-		public override void OnChatButtonClicked(bool firstButton, ref bool openShop) //Allows you to make something happen whenever a button is clicked on this town NPC's chat window. The firstButton parameter tells whether the first button or second button (button and button2 from SetChatButtons) was clicked. Set the shop parameter to true to open this NPC's shop.
-		{
+        public override void OnChatButtonClicked(bool firstButton, ref bool openShop) //Allows you to make something happen whenever a button is clicked on this town NPC's chat window. The firstButton parameter tells whether the first button or second button (button and button2 from SetChatButtons) was clicked. Set the shop parameter to true to open this NPC's shop.
+        {
 			if (firstButton)
 			{
 				openShop = true;   //so when you click on buy button opens the shop
 			}
 		}
 
-		public override void SetupShop(Chest shop, ref int nextSlot)       //Allows you to add items to this town NPC's shop. Add an item by setting the defaults of shop.item[nextSlot] then incrementing nextSlot.
-		{
+        public override void SetupShop(Chest shop, ref int nextSlot)       //Allows you to add items to this town NPC's shop. Add an item by setting the defaults of shop.item[nextSlot] then incrementing nextSlot.
+        {
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdventurersLocket>());  //this is an example of how to add a modded item
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalTear>());
@@ -217,8 +219,6 @@ namespace Illuminum.NPCs.Friendly
 			if (NPC.downedPlantBoss)
 			{
 				shop.item[nextSlot].SetDefaults(ModContent.ItemType<HeartofGaia>());
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<VoidStone>());
 				nextSlot++;
 			}
 			if (NPC.downedGolemBoss)

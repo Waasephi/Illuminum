@@ -12,7 +12,7 @@ namespace Illuminum.NPCs.Enemies
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Blast Bug");
+			 DisplayName.SetDefault("Blast Bug");
 			Main.npcFrameCount[NPC.type] = 5;
 		}
 
@@ -54,8 +54,8 @@ namespace Illuminum.NPCs.Enemies
 			});
 		}
 
-		public override void HitEffect(int hitDirection, double damage)
-		{
+        public override void HitEffect(int hitDirection, double damage)
+        {
 			int amount = NPC.life <= 0 ? 10 : 2;
 
 			for (int i = 0; i < amount; i++)

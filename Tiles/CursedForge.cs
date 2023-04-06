@@ -2,6 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.DataStructures;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -45,9 +46,9 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cursed Forge");
-			Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
-                "\nWorkbench, Anvil, Hellforge, Tinkerer's Workshop, Cooking Pot all included.");
+			  DisplayName.SetDefault("Cursed Forge");
+			  Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
+                "\nWorkbench, Anvil, Hellforge, Tinkerer's Workshop, Cooking Pot all included."); 
 		}
 
 		public override void SetDefaults()

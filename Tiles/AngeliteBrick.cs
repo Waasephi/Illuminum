@@ -1,4 +1,4 @@
-using Illuminum.Items.Materials;
+using Illuminum.Items.Materials.HM;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -10,7 +10,7 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Angelite Brick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			  DisplayName.SetDefault("Angelite Brick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 		}
 
 		public override void SetDefaults() 

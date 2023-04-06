@@ -1,6 +1,6 @@
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
-using Illuminum.Items.Materials;
+using Illuminum.Items.Materials.PreHM;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -12,7 +12,7 @@ namespace Illuminum.NPCs.Enemies
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Quartz Slime");
+			 DisplayName.SetDefault("Quartz Slime");
 			Main.npcFrameCount[NPC.type] = 2;
 		}
 
@@ -37,7 +37,7 @@ namespace Illuminum.NPCs.Enemies
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
 		{
-			return spawnInfo.Player.ZoneRockLayerHeight && !spawnInfo.Player.ZoneDungeon ? 0.3f : 0f;
+			return spawnInfo.Player.ZoneRockLayerHeight && !spawnInfo.Player.ZoneDungeon ? 0.2f : 0f;
 		}
 
 		public override void ModifyNPCLoot(NPCLoot npcLoot)
@@ -54,8 +54,8 @@ namespace Illuminum.NPCs.Enemies
 			});
 		}
 
-		public override void HitEffect(int hitDirection, double damage)
-		{
+        public override void HitEffect(int hitDirection, double damage)
+        {
 			int amount = NPC.life <= 0 ? 10 : 2;
 
 			for (int i = 0; i < amount; i++)

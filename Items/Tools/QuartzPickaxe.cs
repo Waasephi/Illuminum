@@ -17,9 +17,9 @@ namespace Illuminum.Items.Tools
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 13;
+			Item.useTime = 10;
 			Item.useAnimation = 13;
-			Item.pick = 65;
+			Item.pick = 60;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 5;
 			Item.value = 1000;

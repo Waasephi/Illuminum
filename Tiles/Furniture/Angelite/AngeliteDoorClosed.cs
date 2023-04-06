@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -28,7 +29,7 @@ namespace Illuminum.Tiles.Furniture.Angelite
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
 
 			AdjTiles = new int[] { TileID.ClosedDoor };
-			OpenDoorID = ModContent.TileType<AngeliteDoorOpen>();
+			OpenDoorID/* tModPorter Note: Removed. Use TileID.Sets.OpenDoorID instead */ = ModContent.TileType<AngeliteDoorOpen>();
 
 			// Names
 			ModTranslation name = CreateMapEntryName();

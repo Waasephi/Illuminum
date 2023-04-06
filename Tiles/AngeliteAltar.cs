@@ -2,6 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.DataStructures;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -42,9 +43,9 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Angelite Altar");
-			Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
-                "\nCursed Forge, Hardmode Anvils, Hardmode Forges, and Altars Included.");
+			 DisplayName.SetDefault("Angelite Altar");
+			 Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
+                "\nCursed Forge, Hardmode Anvils, Hardmode Forges, and Altars Included."); 
 		}
 
 		public override void SetDefaults()

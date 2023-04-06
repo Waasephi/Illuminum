@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mztmIa+ZppubUVGIwmdsrT65faSI4ToFSkBS654aROdaF6r4N66qweWAX+lwjPg3F3KxUlWgVV02sMVezXojrg==",
+  "dgSpecHash": "hsqy3KDgQtgUFBSL1VDVG4NMBGUtCYbwYHmSJsuWj+/+jI2pXwBX4Lu17LXMideST4hoIUITL2Ef9xYry8UKLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jjrat\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Illuminum\\Illuminum.csproj",
+  "projectFilePath": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Illuminum\\Illuminum.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jjrat\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+    "C:\\Users\\Slime\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],
   "logs": []
 }

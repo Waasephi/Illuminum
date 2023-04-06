@@ -15,11 +15,11 @@ namespace Illuminum.Items.Tools
 		{
 			Item.damage = 11;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 44;
-			Item.height = 40;
-			Item.useTime = 20;
+			Item.width = 40;
+			Item.height = 36;
+			Item.useTime = 15;
 			Item.useAnimation = 20;
-			Item.axe = 11;
+			Item.axe = 13;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = 1000;

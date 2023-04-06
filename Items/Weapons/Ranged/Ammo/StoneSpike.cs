@@ -19,13 +19,13 @@ namespace Illuminum.Items.Weapons.Ranged.Ammo
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 14;
 			Item.height = 24;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.consumable = true;             //You need to set the item consumable so that the ammo would automatically consumed
 			Item.knockBack = 1.5f;
 			Item.value = 1;
 			Item.rare = ItemRarityID.Blue;
 			Item.shoot = ModContent.ProjectileType<StoneSpikeProjectile>();   //The projectile shoot when your weapon using this ammo
-			Item.shootSpeed = 16f;                  //The speed of the projectile
+			Item.shootSpeed = 5f;                  //The speed of the projectile
 			Item.ammo = AmmoID.Dart;              //The ammo class this ammo belongs to.
 		}
 

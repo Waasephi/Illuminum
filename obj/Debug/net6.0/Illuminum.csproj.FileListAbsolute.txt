@@ -1,5 +1,0 @@
-C:\Users\Jjrat\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.csproj.AssemblyReference.cache
-C:\Users\Jjrat\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Jjrat\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.AssemblyInfoInputs.cache
-C:\Users\Jjrat\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.AssemblyInfo.cs
-C:\Users\Jjrat\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.csproj.CoreCompileInputs.cache
