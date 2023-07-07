@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Quartz
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Quartz Pants");
-			Tooltip.SetDefault("+4% Movement Speed");
+			// DisplayName.SetDefault("Quartz Pants");
+			// Tooltip.SetDefault("+4% Movement Speed");
 		}
 
 		public override void SetDefaults()

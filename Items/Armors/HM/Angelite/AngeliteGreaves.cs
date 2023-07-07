@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.HM.Angelite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Angelite Greaves");
-			Tooltip.SetDefault("+14% Movement Speed");
+			// DisplayName.SetDefault("Angelite Greaves");
+			// Tooltip.SetDefault("+14% Movement Speed");
 		}
 
 		public override void SetDefaults()

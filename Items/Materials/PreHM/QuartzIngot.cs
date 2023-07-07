@@ -9,7 +9,7 @@ namespace Illuminum.Items.Materials.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Quartz Ingot"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			 // DisplayName.SetDefault("Quartz Ingot"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 		}
 
 		public override void SetDefaults() 

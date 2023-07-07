@@ -11,10 +11,10 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bloodstone Staff");
+			// DisplayName.SetDefault("Bloodstone Staff");
 			Item.staff[Item.type] = true;
-			Tooltip.SetDefault("Uses your life to spew blood at your foes" +
-			"\n'An eye for an eye'");
+			/* Tooltip.SetDefault("Uses your life to spew blood at your foes" +
+			"\n'An eye for an eye'"); */
 		}
 
 		public override void SetDefaults()

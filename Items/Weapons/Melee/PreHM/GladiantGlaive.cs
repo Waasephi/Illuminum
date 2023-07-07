@@ -12,8 +12,8 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Gladiant Glaive"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Shoots a lingering spectral glaive.");
+			// DisplayName.SetDefault("Gladiant Glaive"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("Shoots a lingering spectral glaive.");
 		}
 
 		public override void SetDefaults() 
@@ -22,8 +22,8 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 48;
 			Item.height = 54;
-			Item.useAnimation = 35;
-			Item.useTime = 70;
+			Item.useAnimation = 20;
+			Item.useTime = 20;
 			Item.shootSpeed = 2f;
 			Item.useStyle = ItemUseStyleID.Thrust;
 			Item.knockBack = 5;
@@ -36,6 +36,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			Item.autoReuse = true; // Most spears don't autoReuse, but it's possible when used in conjunction with CanUseItem()
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.shoot = ProjectileType<GladiantGlaiveProjectile>();
+			Item.reuseDelay = 1;
 		}
 
 		public override bool CanUseItem(Player player)
@@ -44,10 +45,11 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			return player.ownedProjectileCounts[Item.shoot] < 1;
 		}
 
-		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-		{
-			Projectile.NewProjectile(source, position, velocity * 1.5f, ProjectileType<PhantomGGlaive>(), (int)(damage * 0.8f), knockback = 0.1f, player.whoAmI);
-			return true;
-		}
-	}
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+            Projectile.NewProjectile(source, position, velocity * 3f, 
+			ProjectileType<PhantomGGlaive>(), damage, 0.1f, player.whoAmI);
+            return true;
+        }
+    }
 }

@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Charm of Remorse");
-			Tooltip.SetDefault("Having max mana increases magic damage by 60%, having below 1/3rd mana doubles your mana regen" +
-                "\n'Your guilt resonates with this gem'");
+			// DisplayName.SetDefault("Charm of Remorse");
+			/* Tooltip.SetDefault("Having max mana increases magic damage by 60%, having below 1/3rd mana doubles your mana regen" +
+                "\n'Your guilt resonates with this gem'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

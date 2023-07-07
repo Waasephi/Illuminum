@@ -10,7 +10,7 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Spore Bomb");
+			// DisplayName.SetDefault("Spore Bomb");
 		}
 
 		public override void SetDefaults()

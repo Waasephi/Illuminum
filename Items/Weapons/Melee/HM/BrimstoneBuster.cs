@@ -15,9 +15,9 @@ namespace Illuminum.Items.Weapons.Melee.HM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Brimstone Buster"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Shoots swift brimstone slashes and inflicts hellfire" +
-                "\nCritical hits cause explosions with the blade");
+			// DisplayName.SetDefault("Brimstone Buster"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			/* Tooltip.SetDefault("Shoots swift brimstone slashes and inflicts hellfire" +
+                "\nCritical hits cause explosions with the blade"); */
 		}
 
 		public override void SetDefaults() 
@@ -32,7 +32,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.sellPrice(gold: 2);
-			Item.rare = ItemRarityID.Blue;
+			Item.rare = ItemRarityID.Pink;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<BrimstoneWave>();
@@ -40,16 +40,16 @@ namespace Illuminum.Items.Weapons.Melee.HM
 			Item.scale *= 1.2f;
 		}
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(BuffID.OnFire3, 180);
-			if (crit)
+			if (hit.Crit)
 			{
 				SoundEngine.PlaySound(SoundID.Item69, player.Center);
 				IlluminumPlayer.ScreenShakeAmount = 5;
-				for (int i = 0; i < Main.rand.Next(1, 1); i++)
-					Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(0, 0), Main.rand.NextFloat(0, 0)), ProjectileID.DD2ExplosiveTrapT2Explosion, 35, knockBack / 2, player.whoAmI);
-			}
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y - 45, 0, 0,
+                ProjectileID.DD2ExplosiveTrapT2Explosion, Item.damage, 0f, Main.myPlayer, 0, 0);
+            }
 		}
 
 		public override void AddRecipes()

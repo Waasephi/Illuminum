@@ -10,7 +10,7 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults() 
 		{
-			  DisplayName.SetDefault("Quartz Brick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			  // DisplayName.SetDefault("Quartz Brick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 		}
 
 		public override void SetDefaults() 

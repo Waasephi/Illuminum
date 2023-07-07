@@ -13,9 +13,9 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bloodfall");
-			Tooltip.SetDefault("Use your life to shoot bloodstone bolts from the sky" +
-                "\n'An eye for an eye'");
+			// DisplayName.SetDefault("Bloodfall");
+			/* Tooltip.SetDefault("Use your life to shoot bloodstone bolts from the sky" +
+                "\n'An eye for an eye'"); */
 		}
 
 		public override void SetDefaults()

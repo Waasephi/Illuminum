@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Quartz
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Quartz Hood");
-			Tooltip.SetDefault("+6% Ranged Damage");
+			// DisplayName.SetDefault("Quartz Hood");
+			// Tooltip.SetDefault("+6% Ranged Damage");
 			ArmorIDs.Head.Sets.DrawHead[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = false;
 		}
 

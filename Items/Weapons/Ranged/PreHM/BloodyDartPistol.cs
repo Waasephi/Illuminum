@@ -8,8 +8,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Bloody Dart Pistol");
-			 Tooltip.SetDefault("Lumpy and smooth.");
+			 // DisplayName.SetDefault("Bloody Dart Pistol");
+			 // Tooltip.SetDefault("Lumpy and smooth.");
 		}
 
 		public override void SetDefaults() 

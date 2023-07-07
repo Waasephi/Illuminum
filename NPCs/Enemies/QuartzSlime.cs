@@ -12,7 +12,7 @@ namespace Illuminum.NPCs.Enemies
 	{
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Quartz Slime");
+			 // DisplayName.SetDefault("Quartz Slime");
 			Main.npcFrameCount[NPC.type] = 2;
 		}
 
@@ -54,7 +54,7 @@ namespace Illuminum.NPCs.Enemies
 			});
 		}
 
-        public override void HitEffect(int hitDirection, double damage)
+        public override void HitEffect(NPC.HitInfo hit)
         {
 			int amount = NPC.life <= 0 ? 10 : 2;
 

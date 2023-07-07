@@ -10,7 +10,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Diamond Shortsword");
+			// DisplayName.SetDefault("Diamond Shortsword");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

@@ -10,7 +10,6 @@ namespace Illuminum.Walls
 		{
 			Main.wallHouse[Type] = true;
 			 
-			ItemDrop = ModContent.ItemType<QuartzBrickWall>();
 			AddMapEntry(new Color(69, 69, 71));
 		}
 

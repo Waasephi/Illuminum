@@ -9,9 +9,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Quartz Laced Glove");
-			Tooltip.SetDefault("Comfortable and gives a stronger grip." +
-                "\n+8% Whip Speed.");
+			// DisplayName.SetDefault("Quartz Laced Glove");
+			/* Tooltip.SetDefault("Comfortable and gives a stronger grip." +
+                "\n+8% Whip Speed."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

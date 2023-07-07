@@ -28,7 +28,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Bloodstone Dagger");
+			 // DisplayName.SetDefault("Bloodstone Dagger");
 		}
 
 		public override void SetDefaults()
@@ -135,7 +135,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 			return Collision.CheckAABBvLineCollision(targetHitbox.TopLeft(), targetHitbox.Size(), start, end, CollisionWidth, ref collisionPoint);
 		}
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(ModContent.BuffType<BloodFlame>(), 240);
 			Main.player[Projectile.owner].statLife += 10;

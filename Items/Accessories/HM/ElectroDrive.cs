@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Electro Drive");
-			Tooltip.SetDefault("Releases Electrosphere Blasts on taking damage." +
-                "\nShockingly Advanced!");
+			// DisplayName.SetDefault("Electro Drive");
+			/* Tooltip.SetDefault("Releases Electrosphere Blasts on taking damage." +
+                "\nShockingly Advanced!"); */
 		}
 		public override void SetDefaults()
 		{

@@ -26,8 +26,8 @@ namespace Illuminum.Tiles.Furniture.Angelite
             TileObjectData.newTile.LavaPlacement = LiquidPlacement.Allowed;
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Angelite Lantern");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Angelite Lantern");
             AddMapEntry(new Color(238, 90, 167), name);
             AdjTiles = new int[] { TileID.HangingLanterns };
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);

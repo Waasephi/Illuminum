@@ -11,9 +11,9 @@ namespace Illuminum.Items.Armors.HM.Dragon
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Dragonscale Mask");
-			Tooltip.SetDefault("+14% Summon Damage" +
-                "\n+5% Damage Reduction");
+			// DisplayName.SetDefault("Dragonscale Mask");
+			/* Tooltip.SetDefault("+14% Summon Damage" +
+                "\n+5% Damage Reduction"); */
 		}
 
 		public override void SetDefaults()

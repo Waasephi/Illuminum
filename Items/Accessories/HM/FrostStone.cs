@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Frost Stone");
-			Tooltip.SetDefault("Cold to the touch. " +
-                "\nEmbues the holder with frost strength");
+			// DisplayName.SetDefault("Frost Stone");
+			/* Tooltip.SetDefault("Cold to the touch. " +
+                "\nEmbues the holder with frost strength"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

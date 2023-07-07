@@ -13,8 +13,8 @@ namespace Illuminum.Items.Weapons.Ranged.Ammo
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Ash Ball");
-			Tooltip.SetDefault("Slightly Warm");
+			// DisplayName.SetDefault("Ash Ball");
+			// Tooltip.SetDefault("Slightly Warm");
 		}
 
 		public override void SetDefaults()

@@ -9,9 +9,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Unholy Shield");
-			Tooltip.SetDefault("Grants Immunity to knockback" +
-                "\n+5% Damage Reduction");
+			// DisplayName.SetDefault("Unholy Shield");
+			/* Tooltip.SetDefault("Grants Immunity to knockback" +
+                "\n+5% Damage Reduction"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

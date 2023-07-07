@@ -15,9 +15,9 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Cursed Brand");
-			Tooltip.SetDefault("Inflicts cursed inferno" +
-                "\nCritical hits cause cursed flames to erupt from enemies");
+			// DisplayName.SetDefault("Cursed Brand");
+			/* Tooltip.SetDefault("Inflicts cursed inferno" +
+                "\nCritical hits cause cursed flames to erupt from enemies"); */
 		}
 
 		public override void SetDefaults() 
@@ -50,16 +50,16 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			}
 		}
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			// Add the Onfire buff to the NPC for 1 second when the weapon hits an NPC
 			// 60 frames = 1 second
 			target.AddBuff(BuffID.CursedInferno, 180);
-			if (crit)
+			if (hit.Crit)
 			{
 				SoundEngine.PlaySound(SoundID.Item20, player.Center);
 				for (int i = 0; i < Main.rand.Next(2, 4); i++)
-					Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(-2, 2), Main.rand.NextFloat(-3, -5)), ProjectileID.CursedDartFlame, 30, knockBack / 2, player.whoAmI);
+					Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(-2, 2), Main.rand.NextFloat(-3, -5)), ProjectileID.CursedDartFlame, 30, KnockBack: 3, player.whoAmI);
 			}
 		}
 

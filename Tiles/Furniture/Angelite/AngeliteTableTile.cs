@@ -20,8 +20,8 @@ namespace Illuminum.Tiles.Furniture.Angelite
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
 			TileObjectData.newTile.CoordinateHeights = new[] { 16, 16 };
 			TileObjectData.addTile(Type);
-			ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Angelite Table");
+			LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Angelite Table");
             AddMapEntry(new Color(238, 90, 167), name);
 			TileID.Sets.DisableSmartCursor[Type] = true;
 			TileID.Sets.IgnoredByNpcStepUp[Type] = true;

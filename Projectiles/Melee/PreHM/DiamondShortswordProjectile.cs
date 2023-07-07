@@ -27,7 +27,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Diamond Shortsword");
+			 // DisplayName.SetDefault("Diamond Shortsword");
 		}
 
 		public override void SetDefaults()

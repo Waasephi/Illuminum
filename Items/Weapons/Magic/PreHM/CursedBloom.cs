@@ -11,7 +11,7 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cursed Bloom");
+			// DisplayName.SetDefault("Cursed Bloom");
 		}
 
 		public override void SetDefaults()

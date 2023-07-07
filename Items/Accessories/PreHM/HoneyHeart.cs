@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Honey Heart");
-			Tooltip.SetDefault("Tempting to eat... except it isn't edible" +
-                "\n+20 Max Life, Permanent Honey Buff.");
+			// DisplayName.SetDefault("Honey Heart");
+			/* Tooltip.SetDefault("Tempting to eat... except it isn't edible" +
+                "\n+20 Max Life, Permanent Honey Buff."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

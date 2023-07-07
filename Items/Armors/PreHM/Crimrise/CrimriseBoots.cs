@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Crimrise
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Crimrise Boots");
-			Tooltip.SetDefault("+10% Movement Speed");
+			// DisplayName.SetDefault("Crimrise Boots");
+			// Tooltip.SetDefault("+10% Movement Speed");
 		}
 
 		public override void SetDefaults()

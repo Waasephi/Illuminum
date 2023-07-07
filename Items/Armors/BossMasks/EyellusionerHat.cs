@@ -10,7 +10,7 @@ namespace Illuminum.Items.Armors.BossMasks
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Eye-llusioner Hat");
+			// DisplayName.SetDefault("Eye-llusioner Hat");
 			ArmorIDs.Head.Sets.DrawHatHair[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = true;
 		}
 

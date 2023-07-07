@@ -19,8 +19,8 @@ namespace Illuminum.Projectiles.Summoner.Minions.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Mini Dragon?");
-			 Description.SetDefault("This... is a dragon?");
+			 // DisplayName.SetDefault("Mini Dragon?");
+			 // Description.SetDefault("This... is a dragon?");
 
 			Main.buffNoSave[Type] = true; // This buff won't save when you exit the world
 			Main.buffNoTimeDisplay[Type] = true; // The time remaining won't display on this buff

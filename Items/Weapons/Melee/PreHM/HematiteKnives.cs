@@ -12,8 +12,8 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hematite Knives");
-            Tooltip.SetDefault("Shoots a spread of small knives.");
+            // DisplayName.SetDefault("Hematite Knives");
+            // Tooltip.SetDefault("Shoots a spread of small knives.");
         }
 
         public override void SetDefaults()

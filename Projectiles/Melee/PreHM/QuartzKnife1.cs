@@ -11,7 +11,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Quartz Knife");
+			 // DisplayName.SetDefault("Quartz Knife");
 			Main.projFrames[base.Projectile.type] = 6;
 		}
 
@@ -44,7 +44,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 				Projectile.friendly = false;
 			}
 		}
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			
 			target.AddBuff(BuffID.Bleeding, 240);
@@ -56,7 +56,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 				angle *= 2.5f;
 				player.velocity.Y = -angle.Y;
 			}
-			base.OnHitNPC(target, damage, knockback, crit);
+			base.OnHitNPC(target, hit, damageDone);
 		}
 
 	}

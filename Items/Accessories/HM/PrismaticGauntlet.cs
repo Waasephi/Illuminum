@@ -10,12 +10,12 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Prismatic Gauntlet");
-			Tooltip.SetDefault("It glitters in the light " +
+			// DisplayName.SetDefault("Prismatic Gauntlet");
+			/* Tooltip.SetDefault("It glitters in the light " +
 				"\n+12% Whip speed and gives whips autoswing" +
 				"\n+10% summon damage" +
 				"\nIncreased knockback" +
-				"\nWhips randomly apply debuffs");
+				"\nWhips randomly apply debuffs"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)

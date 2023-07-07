@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Living Wood Hilt");
-			Tooltip.SetDefault("Easy to attach and detach!" +
-                "\n+2% Melee Speed.");
+			// DisplayName.SetDefault("Living Wood Hilt");
+			/* Tooltip.SetDefault("Easy to attach and detach!" +
+                "\n+2% Melee Speed."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

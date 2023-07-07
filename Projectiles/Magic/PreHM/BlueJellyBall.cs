@@ -14,7 +14,7 @@ namespace Illuminum.Projectiles.Magic.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Blue Jelly Ball");
+			 // DisplayName.SetDefault("Blue Jelly Ball");
 		}
 
 		public override void SetDefaults()
@@ -28,7 +28,7 @@ namespace Illuminum.Projectiles.Magic.PreHM
 			Bounces = 3;
 		}
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(BuffID.Electrified, 60);
 		}

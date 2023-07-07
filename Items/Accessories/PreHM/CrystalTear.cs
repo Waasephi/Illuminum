@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Crystal Tear");
-			Tooltip.SetDefault("Having below 1/4th of your max mana doubles your mana regen" +
-                "\n'Your cries resonate with this gem'");
+			// DisplayName.SetDefault("Crystal Tear");
+			/* Tooltip.SetDefault("Having below 1/4th of your max mana doubles your mana regen" +
+                "\n'Your cries resonate with this gem'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

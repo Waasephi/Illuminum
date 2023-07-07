@@ -8,7 +8,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Ruby Broadsword");
+			// DisplayName.SetDefault("Ruby Broadsword");
 		}
 
 		public override void SetDefaults()

@@ -14,11 +14,11 @@ namespace Illuminum.Items.Weapons.Melee.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Blinding Sun");
-			Tooltip.SetDefault("Shoots 2 beams of sunlight" +
+			// DisplayName.SetDefault("Blinding Sun");
+			/* Tooltip.SetDefault("Shoots 2 beams of sunlight" +
                 "\nMelee hits inflict Daybroken and spawn a fireball on crits" +
                 "\nThe beams of sunlight pierce infinitely for a short duration" +
-                "\n'Blinding like an eclipse'");
+                "\n'Blinding like an eclipse'"); */
 		}
 
 		public override void SetDefaults()
@@ -27,8 +27,8 @@ namespace Illuminum.Items.Weapons.Melee.HM
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 80;
 			Item.height = 80;
-			Item.useTime = 30;
-			Item.useAnimation = 30;
+			Item.useTime = 25;
+			Item.useAnimation = 25;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.crit = 8;
@@ -40,34 +40,26 @@ namespace Illuminum.Items.Weapons.Melee.HM
             Item.shootSpeed = 14f;
         }
 
-		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-		{
-			const int NumProjectiles = 2;
-
-			for (int i = 0; i < NumProjectiles; i++)
-			{
-
-				Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(15));
-
-
-				//newVelocity *= 1f - Main.rand.NextFloat(0.3f);
-
-
-				Projectile.NewProjectileDirect(source, position, newVelocity, type, damage, knockback, player.whoAmI);
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
+			float numberProjectiles = 2;
+			float rotation = MathHelper.ToRadians(8);
+			position += Vector2.Normalize(velocity) * 8f;
+			for (int i = 0; i < numberProjectiles; i++) {
+				Vector2 perturbedSpeed = velocity.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * 1f; // Watch out for dividing by 0 if there is only 1 projectile.
+				Projectile.NewProjectile(source, position, perturbedSpeed, type, damage, knockback, player.whoAmI);
 			}
-
-			return false;
+			return false; // return false to stop vanilla from calling Projectile.NewProjectile.
 		}
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(BuffID.Daybreak, 240);
-			if (crit)
+			if (hit.Crit)
 			{
 				SoundEngine.PlaySound(SoundID.Item20, player.Center);
 				IlluminumPlayer.ScreenShakeAmount = 5;
 				for (int i = 0; i < Main.rand.Next(1, 1); i++)
-					Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(0, 0), Main.rand.NextFloat(0, 0)), ProjectileID.InfernoFriendlyBlast, 60, knockBack / 2, player.whoAmI);
+					Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(0, 0), Main.rand.NextFloat(0, 0)), ProjectileID.InfernoFriendlyBlast, 60, KnockBack: 3, player.whoAmI);
 			}
 		}
 

@@ -14,7 +14,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 		int timer = 0;
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Phantom Glaive");
+			 // DisplayName.SetDefault("Phantom Glaive");
 			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 8;
 			ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 		}
@@ -24,8 +24,8 @@ namespace Illuminum.Projectiles.Melee.PreHM
 			Projectile.friendly = true;
 			Projectile.hostile = false;
 			Projectile.timeLeft = 200;
-			Projectile.height = 18;
-			Projectile.width = 25;
+			Projectile.height = 32;
+			Projectile.width = 14;
 			Projectile.penetrate = 1;
 			AIType = ProjectileID.Bullet;
 			Projectile.extraUpdates = 1;

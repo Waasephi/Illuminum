@@ -11,8 +11,8 @@ namespace Illuminum.Projectiles.Summoner.Minions.PreHM
     {
         public override void SetStaticDefaults()
         {
-             DisplayName.SetDefault("Hematite Reaver");
-             Description.SetDefault("A Hematite Reaver will fight for you");
+             // DisplayName.SetDefault("Hematite Reaver");
+             // Description.SetDefault("A Hematite Reaver will fight for you");
 
             Main.buffNoSave[Type] = true; // This buff won't save when you exit the world
             Main.buffNoTimeDisplay[Type] = true; // The time remaining won't display on this buff

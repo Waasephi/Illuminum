@@ -8,6 +8,7 @@ using Illuminum.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
+using Illuminum.Projectiles.Melee.HM;
 
 namespace Illuminum.Items.Weapons.Melee.HM
 {
@@ -18,12 +19,13 @@ namespace Illuminum.Items.Weapons.Melee.HM
         public override float SwingDownSpeed => 20f;
         public override bool CollideWithTiles => true;
         static bool hasHitSomething = false;
+        static bool hasHitEnemies = false;
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Gigaton Hammer");
-            Tooltip.SetDefault("Does more damage to injured enemies" +
-                "\n'Kill em dead'");
+            // DisplayName.SetDefault("Gigaton Hammer");
+            /* Tooltip.SetDefault("Does more damage to injured enemies" +
+                "\n'Kill em dead'"); */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
@@ -47,6 +49,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
         public override void UseAnimation(Player player)
         {
             hasHitSomething = false;
+            hasHitEnemies = false;
         }
 
         public override void OnHitTiles(Player player)
@@ -57,15 +60,26 @@ namespace Illuminum.Items.Weapons.Melee.HM
 
                 IlluminumPlayer.ScreenShakeAmount = 13;
 
-
-            SoundEngine.PlaySound(SoundID.Item69, player.Center);
+                if (!hasHitEnemies)
+                {
+                    Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                    player.Center.Y, 0, 0, ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                }
+                SoundEngine.PlaySound(SoundID.Item69, player.Center);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                player.Center.Y, 0, 6, ProjectileID.LunarFlare, 100, Item.knockBack = 3, player.whoAmI);
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            SoundEngine.PlaySound(SoundID.Item69, player.Center);
-            Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(0, 0), ProjectileID.LunarFlare, 100, knockBack / 4, player.whoAmI);
+            if (!hasHitEnemies)
+            {
+                hasHitEnemies = true;
+
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y, 0, 0,
+                ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+            }
             if (target.life <= target.lifeMax * 0.99)
             {
                 target.takenDamageMultiplier = 1.8f;

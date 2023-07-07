@@ -11,9 +11,9 @@ namespace Illuminum.Items.Armors.HM.Dragon
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Dragonscale Helm");
-			Tooltip.SetDefault("+14% Melee Damage" +
-                "\n+15% Damage Reduction");
+			// DisplayName.SetDefault("Dragonscale Helm");
+			/* Tooltip.SetDefault("+14% Melee Damage" +
+                "\n+15% Damage Reduction"); */
 		}
 
 		public override void SetDefaults()

@@ -14,9 +14,9 @@ namespace Illuminum.Items.Weapons.Melee.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Daylight");
-			Tooltip.SetDefault("Inflicts daybroken" +
-                "\n'A sparkling star'");
+			// DisplayName.SetDefault("Daylight");
+			/* Tooltip.SetDefault("Inflicts daybroken" +
+                "\n'A sparkling star'"); */
 		}
 
 		public override void SetDefaults()
@@ -37,7 +37,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
 			Item.shootSpeed = 12f;
 		}
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(BuffID.Daybreak, 60);
 		}

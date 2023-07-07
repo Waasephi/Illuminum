@@ -1,0 +1,5 @@
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.csproj.AssemblyReference.cache
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.AssemblyInfoInputs.cache
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.AssemblyInfo.cs
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Illuminum\obj\Debug\net6.0\Illuminum.csproj.CoreCompileInputs.cache

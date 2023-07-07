@@ -10,12 +10,12 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Envenomed Gauntlet");
-			Tooltip.SetDefault("Don't touch it. " +
+			// DisplayName.SetDefault("Envenomed Gauntlet");
+			/* Tooltip.SetDefault("Don't touch it. " +
 				"\n+12% Melee Speed and gives melee weapons autoswing" +
 				"\n+10% Melee Damage" +
 				"\nIncreased Knockback" +
-				"\nThorns and Flask of Venom effects.");
+				"\nThorns and Flask of Venom effects."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
@@ -41,10 +41,8 @@ namespace Illuminum.Items.Accessories.HM
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.TitanGlove);
-			recipe.AddIngredient(ModContent.ItemType<BrambleGlove>(), 1);
+			recipe.AddIngredient(ItemID.FireGauntlet);
 			recipe.AddIngredient(ItemID.VialofVenom, 10);
-			recipe.AddIngredient(ItemID.WarriorEmblem);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
 		}

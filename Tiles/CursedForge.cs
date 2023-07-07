@@ -18,8 +18,8 @@ namespace Illuminum.Tiles
 			AdjTiles = new int[] { TileID.WorkBenches, TileID.Furnaces, TileID.Anvils, TileID.Hellforge, 114 /*Tinkerer's Workshop */, TileID.CookingPots };
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
 			TileObjectData.addTile(Type);
-			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("Cursed Forge");
+			LocalizedText name = CreateMapEntryName();
+			// name.SetDefault("Cursed Forge");
 			AddMapEntry(new Color(150, 0, 170), name);
 
 			//Can't use this since texture is vertical.
@@ -46,9 +46,9 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults()
 		{
-			  DisplayName.SetDefault("Cursed Forge");
-			  Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
-                "\nWorkbench, Anvil, Hellforge, Tinkerer's Workshop, Cooking Pot all included."); 
+			  // DisplayName.SetDefault("Cursed Forge");
+			  /* Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
+                "\nWorkbench, Anvil, Hellforge, Tinkerer's Workshop, Cooking Pot all included."); */ 
 		}
 
 		public override void SetDefaults()

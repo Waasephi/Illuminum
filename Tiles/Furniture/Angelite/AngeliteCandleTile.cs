@@ -21,11 +21,10 @@ namespace Illuminum.Tiles.Furniture.Angelite
             TileObjectData.newTile.CoordinateHeights = new int[] { 18 };
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Candle");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Candle");
             AddMapEntry(new Color(114, 13, 39), name);
             AdjTiles = new int[] { TileID.Candles };
-            ItemDrop = ModContent.ItemType<AngeliteCandle>();
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
             DustType = DustID.PinkCrystalShard;
         }

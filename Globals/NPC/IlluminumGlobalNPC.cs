@@ -16,6 +16,7 @@ using Illuminum.Items.Weapons.Magic.PreHM;
 using Illuminum.Items.Weapons.Magic.HM;
 using Illuminum.Items.Materials.HM;
 using Illuminum.Items.Materials.PreHM;
+using Illuminum.Items.Weapons.Ranged.PreHM;
 
 namespace Illuminum.Globals.NPC
 {
@@ -34,7 +35,9 @@ namespace Illuminum.Globals.NPC
             if (npc.type == NPCID.IceGolem)
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FrostStone>(), 12));
             if (npc.type == NPCID.BloodZombie || npc.type == NPCID.Drippler)
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodShard>(), 2));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodShard>(), 1, 1, 4));
+            if (npc.type == NPCID.TheGroom || npc.type == NPCID.TheBride)
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodShard>(), 2, 1, 2));
             if (npc.type == NPCID.EyeballFlyingFish)
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodShard>(), 1, 7, 11));
             if (npc.type == NPCID.ZombieMerman)
@@ -51,6 +54,8 @@ namespace Illuminum.Globals.NPC
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AngeliteChunk>(), 1, 5, 8));
             if (npc.type == NPCID.Lavabat || npc.type == NPCID.RedDevil)
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BrimstoneCrystal>(), 10, 1, 2));
+            if (npc.type == NPCID.Harpy)
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FeatherShot>(), 20));
         }
     }
 }

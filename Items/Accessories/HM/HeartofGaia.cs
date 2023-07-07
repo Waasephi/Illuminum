@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Heart of Gaia");
-			Tooltip.SetDefault("The Heart of the god of the Earth." +
-                "\nGreatly boosts your Health and Regeneration.");
+			// DisplayName.SetDefault("Heart of Gaia");
+			/* Tooltip.SetDefault("The Heart of the god of the Earth." +
+                "\nGreatly boosts your Health and Regeneration."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

@@ -8,7 +8,7 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Glacial Trident");
+			// DisplayName.SetDefault("Glacial Trident");
 			Item.staff[Item.type] = true;
 		}
 

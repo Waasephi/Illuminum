@@ -11,8 +11,8 @@ namespace Illuminum.Items.Materials.HM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Brimstone Crystal"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("A red crystal stuck in solidified ash. It is very warm.");
+			// DisplayName.SetDefault("Brimstone Crystal"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("A red crystal stuck in solidified ash. It is very warm.");
 		}
 
 		public override void SetDefaults() 

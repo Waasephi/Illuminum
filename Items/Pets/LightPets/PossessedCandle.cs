@@ -12,8 +12,8 @@ namespace Illuminum.Items.Pets.LightPets
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Possessed Candle");
-			Tooltip.SetDefault("Summons a possessed water candle to increase spawnrates");
+			// DisplayName.SetDefault("Possessed Candle");
+			// Tooltip.SetDefault("Summons a possessed water candle to increase spawnrates");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

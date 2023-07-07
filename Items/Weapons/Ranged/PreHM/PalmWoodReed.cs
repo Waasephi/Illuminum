@@ -8,8 +8,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Palm Wood Reed");
-			 Tooltip.SetDefault("Don't get a splinter.");
+			 // DisplayName.SetDefault("Palm Wood Reed");
+			 // Tooltip.SetDefault("Don't get a splinter.");
 		}
 
 		public override void SetDefaults() 

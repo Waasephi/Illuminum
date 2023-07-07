@@ -9,7 +9,7 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Quartz Bow");
+			 // DisplayName.SetDefault("Quartz Bow");
 		}
 
 		public override void SetDefaults() 

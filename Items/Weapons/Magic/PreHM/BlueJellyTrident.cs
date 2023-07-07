@@ -9,8 +9,8 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Blue Jelly Trident");
-			Tooltip.SetDefault("Shoots bouncing balls of electrified gel");
+			// DisplayName.SetDefault("Blue Jelly Trident");
+			// Tooltip.SetDefault("Shoots bouncing balls of electrified gel");
 			Item.staff[Item.type] = true;
 		}
 

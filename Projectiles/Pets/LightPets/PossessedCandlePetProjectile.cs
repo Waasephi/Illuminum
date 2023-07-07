@@ -13,7 +13,7 @@ namespace Illuminum.Projectiles.Pets.LightPets
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Possessed Candle");
+			 // DisplayName.SetDefault("Possessed Candle");
 
 			Main.projFrames[Projectile.type] = 4;
 			Main.projPet[Projectile.type] = true;

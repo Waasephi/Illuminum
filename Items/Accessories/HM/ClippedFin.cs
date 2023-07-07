@@ -8,10 +8,10 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Clipped Fin");
-			Tooltip.SetDefault("+25% movement speed when wet." +
+			// DisplayName.SetDefault("Clipped Fin");
+			/* Tooltip.SetDefault("+25% movement speed when wet." +
                 "\nIncreases your movement capabilities." +
-                "\n'I'm not going fast enough'");
+                "\n'I'm not going fast enough'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

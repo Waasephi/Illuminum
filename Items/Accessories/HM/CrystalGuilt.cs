@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Crystal Guilt");
-			Tooltip.SetDefault("Having max mana increases your magic damage by 50%" +
-				"\n'Your sorrows resonate with this gem'");
+			// DisplayName.SetDefault("Crystal Guilt");
+			/* Tooltip.SetDefault("Having max mana increases your magic damage by 50%" +
+				"\n'Your sorrows resonate with this gem'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

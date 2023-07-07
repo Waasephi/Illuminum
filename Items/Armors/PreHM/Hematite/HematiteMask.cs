@@ -10,8 +10,8 @@ namespace Illuminum.Items.Armors.PreHM.Hematite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Hematite Mask");
-			Tooltip.SetDefault("+12% crit chance, +1 minion slot");
+			// DisplayName.SetDefault("Hematite Mask");
+			// Tooltip.SetDefault("+12% crit chance, +1 minion slot");
 		}
 
 		public override void SetDefaults()

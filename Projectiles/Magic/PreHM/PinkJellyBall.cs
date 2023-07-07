@@ -14,7 +14,7 @@ namespace Illuminum.Projectiles.Magic.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Pink Jelly Ball");
+			 // DisplayName.SetDefault("Pink Jelly Ball");
 		}
 
 		public override void SetDefaults()
@@ -33,7 +33,7 @@ namespace Illuminum.Projectiles.Magic.PreHM
 				SoundEngine.PlaySound(SoundID.Item94, Projectile.position);
 				Vector2 usePos = Projectile.position;
 				Collision.HitTiles(Projectile.position, Projectile.velocity, Projectile.width, Projectile.height);
-				Projectile.NewProjectile(Terraria.Entity.InheritSource(Projectile), Projectile.position, Vector2.Zero, ProjectileID.Electrosphere, 5, 0, Projectile.owner);
+				Projectile.NewProjectile(Terraria.Entity.InheritSource(Projectile), Projectile.position, Vector2.Zero, ProjectileID.Electrosphere, Projectile.damage / 2, 0, Projectile.owner);
 				Projectile.spriteDirection = Projectile.direction = (Projectile.velocity.X > 0).ToDirectionInt();
 
 				for (int num623 = 0; num623 < 50; num623++)

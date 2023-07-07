@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Tin Cross");
-			Tooltip.SetDefault("A pocket cross, holding this gives you comfort." +
-				"\nIncreases mana regeneration");
+			// DisplayName.SetDefault("Tin Cross");
+			/* Tooltip.SetDefault("A pocket cross, holding this gives you comfort." +
+				"\nIncreases mana regeneration"); */
 		}
 
 		public override void SetDefaults()

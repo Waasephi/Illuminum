@@ -8,7 +8,7 @@ namespace Illuminum.Items.Tools
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Quartz Hammer");
+			// DisplayName.SetDefault("Quartz Hammer");
 		}
 
 		public override void SetDefaults()

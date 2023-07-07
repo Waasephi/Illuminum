@@ -13,7 +13,7 @@ namespace Illuminum.Items.Weapons.Ranged.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Brimlance");
+			// DisplayName.SetDefault("Brimlance");
 		}
 
 		public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace Illuminum.Items.Weapons.Ranged.HM
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 5;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.Green;
+			Item.rare = ItemRarityID.Pink;
 			Item.reuseDelay = 6;    //this is the item delay
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;       //this make the item auto reuse

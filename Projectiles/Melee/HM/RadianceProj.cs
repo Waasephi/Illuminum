@@ -28,7 +28,7 @@ namespace Illuminum.Projectiles.Melee.HM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Radiance");
+			 // DisplayName.SetDefault("Radiance");
 			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 30;
 			ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 		}

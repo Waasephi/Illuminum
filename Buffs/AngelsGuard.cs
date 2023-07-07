@@ -9,18 +9,15 @@ namespace Illuminum.Buffs
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Angel's Guard");
-			Description.SetDefault("Protected by the angels");
+			// DisplayName.SetDefault("Angel's Guard");
+			// Description.SetDefault("Protected by the angels");
 		}
 
 		public override void Update(Player player, ref int buffIndex)
 		{
-			player.endurance *= 1.2f;
-			player.statDefense += 8;
+			player.endurance *= 1.5f;
+			player.statDefense += 15;
 			player.lifeRegen += 2;
-			player.immune = true;         // make player immune
-			player.immuneTime = 60;       // ... for 80 ticks
-			player.immuneNoBlink = true;  // ... and don't make the player flash during the immune time
 			player.longInvince = true;
 		}
 	}

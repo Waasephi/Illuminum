@@ -10,7 +10,6 @@ namespace Illuminum.Walls
 		{
 			Main.wallHouse[Type] = true;
 			 
-			ItemDrop = ModContent.ItemType<AngeliteBrickWall>();
 			AddMapEntry(new Color(100, 3, 84));
 		}
 

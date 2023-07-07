@@ -14,7 +14,7 @@ namespace Illuminum.Projectiles.Misc.HM
 		int timer = 0;
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Brimstone Wave");
+			 // DisplayName.SetDefault("Brimstone Wave");
 			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 6;
 			ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 		}
@@ -88,7 +88,7 @@ namespace Illuminum.Projectiles.Misc.HM
 			return new Color(255, 200, 122, 100);
 		}
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			if (Main.rand.NextBool(4))
 				target.AddBuff(BuffID.OnFire3, 240);

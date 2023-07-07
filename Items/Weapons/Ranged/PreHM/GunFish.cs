@@ -8,7 +8,7 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Gun Fish");
+			// DisplayName.SetDefault("Gun Fish");
 		}
 
 		public override void SetDefaults()

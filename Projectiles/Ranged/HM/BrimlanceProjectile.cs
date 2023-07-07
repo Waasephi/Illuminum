@@ -45,15 +45,16 @@ namespace Illuminum.Projectiles.Ranged.HM
 		{
 			SoundEngine.PlaySound(SoundID.Item69, Projectile.position);
 			SoundEngine.PlaySound(SoundID.Item27, Projectile.position);
-			Projectile.NewProjectile(Terraria.Entity.InheritSource(Projectile), Projectile.Center, Vector2.Zero, ProjectileID.DD2ExplosiveTrapT2Explosion, Projectile.damage, Projectile.knockBack, Projectile.owner);
-			for (int i = 0; i < 5; i++)
+            Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y - 45, 0, 0,
+            ProjectileID.DD2ExplosiveTrapT2Explosion, Projectile.damage, 0f, Main.myPlayer, 0, 0);
+            for (int i = 0; i < 5; i++)
 			{
 				int d = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.Torch);
 				Main.dust[d].scale = 1.5f;
 			}
 		}
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			if (Main.rand.NextBool(2))
 				target.AddBuff(BuffID.OnFire3, 180);

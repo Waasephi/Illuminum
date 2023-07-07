@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Dragon Scale Necklace");
-			Tooltip.SetDefault("+20 Armor Penetration." +
-                "\nIts still warm.");
+			// DisplayName.SetDefault("Dragon Scale Necklace");
+			/* Tooltip.SetDefault("+20 Armor Penetration." +
+                "\nIts still warm."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

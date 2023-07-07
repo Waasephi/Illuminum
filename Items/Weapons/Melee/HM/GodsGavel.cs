@@ -8,22 +8,24 @@ using Illuminum.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
+using Illuminum.Projectiles.Melee.HM;
 
 namespace Illuminum.Items.Weapons.Melee.HM
 {
     public class GodsGavel : SwingWeaponBase
     {
         public override int Length => 72;
-        public override int TopSize => 34;
+        public override int TopSize => 30;
         public override float SwingDownSpeed => 18f;
         public override bool CollideWithTiles => true;
         static bool hasHitSomething = false;
+        static bool hasHitEnemies = false;
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("God's Gavel");
-            Tooltip.SetDefault("Does more damage to healthy enemies" +
-                "\n'Smite them in the name of the Lord!'");
+            // DisplayName.SetDefault("God's Gavel");
+            /* Tooltip.SetDefault("Does more damage to healthy enemies" +
+                "\n'Smite them in the name of the Lord!'"); */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
@@ -47,6 +49,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
         public override void UseAnimation(Player player)
         {
             hasHitSomething = false;
+            hasHitEnemies = false;
         }
 
         public override void OnHitTiles(Player player)
@@ -57,18 +60,29 @@ namespace Illuminum.Items.Weapons.Melee.HM
 
                 IlluminumPlayer.ScreenShakeAmount = 9;
 
-
-            SoundEngine.PlaySound(SoundID.Item69, player.Center);
+                if (!hasHitEnemies)
+                {
+                    Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                    player.Center.Y, 0, 0, ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                }
+                SoundEngine.PlaySound(SoundID.Item69, player.Center);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),player.Center.Y, 0, -30, ProjectileID.StarCannonStar, 120, Item.knockBack = 5, player.whoAmI);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 45 + (Item.scale * 2) : -45 + (-Item.scale * 2)), player.Center.Y, 0, -20, ProjectileID.StarCannonStar, 90, Item.knockBack = 5, player.whoAmI);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 0 + (Item.scale * 2) : 0 + (-Item.scale * 2)), player.Center.Y, 0, -10, ProjectileID.StarCannonStar, 60, Item.knockBack = 5, player.whoAmI);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 135 + (Item.scale * 2) : -135 + (-Item.scale * 2)), player.Center.Y, 0, -20, ProjectileID.StarCannonStar, 90, Item.knockBack = 5, player.whoAmI);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 180 + (Item.scale * 2) : -180 + (-Item.scale * 2)), player.Center.Y, 0, -10, ProjectileID.StarCannonStar, 60, Item.knockBack = 5, player.whoAmI);
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            SoundEngine.PlaySound(SoundID.Item9, player.Center);
-            for (int i = 0; i < Main.rand.Next(2, 2); i++)
-                Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(-15, 15), Main.rand.NextFloat(-25, -25)), ProjectileID.StarCannonStar, 60, knockBack / 2, player.whoAmI);
-            for (int i = 0; i < Main.rand.Next(2, 2); i++)
-                Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(-15, 15), Main.rand.NextFloat(25, 25)), ProjectileID.StarCannonStar, 60, knockBack / 2, player.whoAmI);
+            if (!hasHitEnemies)
+            {
+                hasHitEnemies = true;
+
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y, 0, 0,
+                ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+            }
             if (target.life == target.lifeMax)
             {
                 target.takenDamageMultiplier = 1.6f;

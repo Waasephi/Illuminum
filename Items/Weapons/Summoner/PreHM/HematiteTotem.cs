@@ -12,8 +12,8 @@ namespace Illuminum.Items.Weapons.Summoner.PreHM
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hematite Totem");
-            Tooltip.SetDefault("Summons a Hematite Reaver to fight for you.");
+            // DisplayName.SetDefault("Hematite Totem");
+            // Tooltip.SetDefault("Summons a Hematite Reaver to fight for you.");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
             ItemID.Sets.GamepadWholeScreenUseRange[Item.type] = true;
             ItemID.Sets.LockOnIgnoresCollision[Item.type] = true;

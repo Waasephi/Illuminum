@@ -6,6 +6,8 @@ using Terraria.Audio;
 
 using Illuminum.Core;
 using Microsoft.Xna.Framework;
+using Illuminum.Projectiles.Melee.PreHM;
+using Illuminum.Projectiles.Melee.HM;
 
 namespace Illuminum.Items.Weapons.Melee.PreHM
 {
@@ -16,17 +18,18 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
         public override float SwingDownSpeed => 12f;
         public override bool CollideWithTiles => true;
         static bool hasHitSomething = false;
+        static bool hasHitEnemies = false;
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Wooden Club");
-            Tooltip.SetDefault("Deals more damage to enemies at low health and confuses on hit");
+            // DisplayName.SetDefault("Wooden Club");
+            // Tooltip.SetDefault("Deals more damage to enemies at low health and confuses on hit");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
         {
-            Item.damage = 24;
+            Item.damage = 12;
             Item.DamageType = DamageClass.Melee;
             Item.autoReuse = true;
             Item.width = 40;
@@ -44,26 +47,42 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
         public override void UseAnimation(Player player)
         {
             hasHitSomething = false;
+            hasHitEnemies = false;
         }
 
         public override void OnHitTiles(Player player)
         {
+            if (Main.netMode != NetmodeID.MultiplayerClient)
+            {
+                IlluminumPlayer.ScreenShakeAmount = 3;
+            }
             if (!hasHitSomething)
             {
                 hasHitSomething = true;
 
-                IlluminumPlayer.ScreenShakeAmount = 3;
-
                 SoundEngine.PlaySound(SoundID.DD2_MonkStaffGroundMiss, player.Center);
+                if (!hasHitEnemies)
+                {
+                    Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                    player.Center.Y, 0, 0, ModContent.ProjectileType<PreHMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                }
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            SoundEngine.PlaySound(new("Illuminum/Sounds/Item/Bonk"), player.position);
-            target.AddBuff(BuffID.Confused, 300);
+            if (!hasHitEnemies)
+            {
+                hasHitEnemies = true;
 
-            CombatText.NewText(target.getRect(), Color.Yellow, "Bonk", true, false);
+                SoundEngine.PlaySound(new("Illuminum/Sounds/Item/Bonk"), player.position);
+                target.AddBuff(BuffID.Confused, 300);
+
+                CombatText.NewText(target.getRect(), Color.Yellow, "Bonk", true, false);
+
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y, 0, 0,
+                ModContent.ProjectileType<PreHMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+            }
 
             if (target.life <= target.lifeMax * 0.33)
             {

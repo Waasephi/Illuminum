@@ -11,8 +11,8 @@ namespace Illuminum.Buffs.Pets.LightPets
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Possessed Candle");
-			Description.SetDefault("How attractive! But not in the way you might think...");
+			// DisplayName.SetDefault("Possessed Candle");
+			// Description.SetDefault("How attractive! But not in the way you might think...");
 
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.lightPet[Type] = true;

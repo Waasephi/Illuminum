@@ -12,13 +12,13 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 		float shootCD;
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Quartz Knife");
-			Tooltip.SetDefault("Creates a slash that repels and bleeds enemies.");
+			// DisplayName.SetDefault("Quartz Knife");
+			// Tooltip.SetDefault("Creates a slash that repels and bleeds enemies.");
 		}
 
 		public override void SetDefaults()
 		{
-			Item.damage = 20;
+			Item.damage = 14;
 			Item.DamageType = DamageClass.Melee;
 			Item.noMelee = true;
 			Item.width = 48;

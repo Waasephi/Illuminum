@@ -10,8 +10,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Sand Cannon");
-			Tooltip.SetDefault("Shoots a spread of sand.");
+			// DisplayName.SetDefault("Sand Cannon");
+			// Tooltip.SetDefault("Shoots a spread of sand.");
 		}
 
 		public override void SetDefaults()

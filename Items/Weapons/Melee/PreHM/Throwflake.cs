@@ -9,7 +9,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Throwflake");
+			// DisplayName.SetDefault("Throwflake");
 		}
 
 		public override void SetDefaults()

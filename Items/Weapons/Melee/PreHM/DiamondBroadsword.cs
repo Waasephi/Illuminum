@@ -8,7 +8,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Diamond Broadsword");
+			// DisplayName.SetDefault("Diamond Broadsword");
 		}
 
 		public override void SetDefaults()

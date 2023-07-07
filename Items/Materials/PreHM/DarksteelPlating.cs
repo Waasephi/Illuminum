@@ -9,8 +9,8 @@ namespace Illuminum.Items.Materials.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Darksteel Plating"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("A very durable plating, slightly hurts to hold.");
+			// DisplayName.SetDefault("Darksteel Plating"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("A very durable plating, slightly hurts to hold.");
 		}
 
 		public override void SetDefaults() 

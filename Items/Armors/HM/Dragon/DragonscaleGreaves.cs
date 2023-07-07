@@ -11,9 +11,9 @@ namespace Illuminum.Items.Armors.HM.Dragon
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Dragonscale Greaves");
-			Tooltip.SetDefault("+16% Movement Speed" +
-                "\nImmunity to Knockback");
+			// DisplayName.SetDefault("Dragonscale Greaves");
+			/* Tooltip.SetDefault("+16% Movement Speed" +
+                "\nImmunity to Knockback"); */
 		}
 
 		public override void SetDefaults()

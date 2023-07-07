@@ -16,8 +16,8 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			ItemID.Sets.Yoyo[Item.type] = true;
 			ItemID.Sets.GamepadExtraRange[Item.type] = 15;
 			ItemID.Sets.GamepadSmartQuickReach[Item.type] = true;
-			DisplayName.SetDefault("Granite Core");
-			Tooltip.SetDefault("Shoots an electric laser at the cursor.");
+			// DisplayName.SetDefault("Granite Core");
+			// Tooltip.SetDefault("Shoots an electric laser at the cursor.");
 		}
 
 		public override void SetDefaults()

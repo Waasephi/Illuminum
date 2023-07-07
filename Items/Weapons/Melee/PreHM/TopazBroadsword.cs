@@ -8,7 +8,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Topaz Broadsword");
+			// DisplayName.SetDefault("Topaz Broadsword");
 		}
 
 		public override void SetDefaults()

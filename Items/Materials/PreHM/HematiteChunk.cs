@@ -9,8 +9,8 @@ namespace Illuminum.Items.Materials.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Hematite Chunk"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("A chunk of fossilized blood, it is very smooth.");
+			// DisplayName.SetDefault("Hematite Chunk"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("A chunk of fossilized blood, it is very smooth.");
 		}
 
 		public override void SetDefaults() 

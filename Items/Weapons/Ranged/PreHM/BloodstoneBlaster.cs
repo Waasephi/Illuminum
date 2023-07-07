@@ -11,10 +11,10 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Bloodstone Blaster");
-			Tooltip.SetDefault("Shoots 2 bullets at above half max life" +
+			// DisplayName.SetDefault("Bloodstone Blaster");
+			/* Tooltip.SetDefault("Shoots 2 bullets at above half max life" +
                 "\nUsing this gun above half max life drain health" +
-                "\n'An eye for an eye'");
+                "\n'An eye for an eye'"); */
 		}
 
 		public override void SetDefaults() 

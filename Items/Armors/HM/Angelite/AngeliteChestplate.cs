@@ -11,9 +11,9 @@ namespace Illuminum.Items.Armors.HM.Angelite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Angelite Chestplate");
-			Tooltip.SetDefault("+12% all Crit Chance" +
-                "\n+2 Max Minions");
+			// DisplayName.SetDefault("Angelite Chestplate");
+			/* Tooltip.SetDefault("+12% all Crit Chance" +
+                "\n+2 Max Minions"); */
 		}
 
 		public override void SetDefaults()

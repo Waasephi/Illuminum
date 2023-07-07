@@ -19,6 +19,7 @@ namespace Illuminum.NPCs.Friendly
 	[AutoloadHead]
 	public class Explorer : ModNPC
 	{
+        public const string ShopName = "Shop";
 			public override void SetStaticDefaults()
 			{
 				// DisplayName automatically assigned from localization files, but the commented line below is the normal approach.
@@ -80,7 +81,7 @@ namespace Illuminum.NPCs.Friendly
 			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
 				// Sets the preferred biomes of this town NPC listed in the bestiary.
 				// With Town NPCs, you usually set this to what biome it likes the most in regards to NPC happiness.
-				BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+				BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
 
 				// Sets your NPC's flavor text in the bestiary.
 				new FlavorTextBestiaryInfoElement("A man who was a famous adventurer in the past. He has since retired due to old age."),
@@ -109,9 +110,9 @@ namespace Illuminum.NPCs.Friendly
 			return true;
 		}
 
-        public override bool CanTownNPCSpawn(int numTownNPCs, int money)
+        public override bool CanTownNPCSpawn(int numTownNPCs)/* tModPorter Suggestion: Copy the implementation of NPC.SpawnAllowed_Merchant in vanilla if you to count money, and be sure to set a flag when unlocked, so you don't count every tick. */
         {
-			if (NPC.downedSlimeKing)
+			if (NPC.downedBoss1)
 			{
 				return true;
 			}
@@ -146,134 +147,45 @@ namespace Illuminum.NPCs.Friendly
 			button = "Shop";   //this defines the buy button name
 		}
 
-        public override void OnChatButtonClicked(bool firstButton, ref bool openShop) //Allows you to make something happen whenever a button is clicked on this town NPC's chat window. The firstButton parameter tells whether the first button or second button (button and button2 from SetChatButtons) was clicked. Set the shop parameter to true to open this NPC's shop.
+        public override void OnChatButtonClicked(bool firstButton, ref string shop) //Allows you to make something happen whenever a button is clicked on this town NPC's chat window. The firstButton parameter tells whether the first button or second button (button and button2 from SetChatButtons) was clicked. Set the shop parameter to true to open this NPC's shop.
         {
 			if (firstButton)
 			{
-				openShop = true;   //so when you click on buy button opens the shop
-			}
+                shop = ShopName;   //so when you click on buy button opens the shop
+            }
 		}
 
-        public override void SetupShop(Chest shop, ref int nextSlot)       //Allows you to add items to this town NPC's shop. Add an item by setting the defaults of shop.item[nextSlot] then incrementing nextSlot.
-        {
-			shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdventurersLocket>());  //this is an example of how to add a modded item
-			nextSlot++;
-			shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalTear>());
-			nextSlot++;
-			if (NPC.downedBoss1)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<BloodyLens>());
-				nextSlot++;
-			}
-			if (NPC.downedBoss2)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<UnholyHeart>());
-				nextSlot++;
-			}
-			/*if (IlluminumWorld.downedFrigidConstruct)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<RoyalBlanket>());
-				nextSlot++;
-			}*/
-			if (NPC.downedQueenBee)
-			{
-				shop.item[nextSlot].SetDefaults(1132); //Honeycomb
-				nextSlot++;
-			}
-			if (NPC.downedBoss3)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SkullNecklace>());
-				nextSlot++;
-			}
-			if (Main.hardMode)
-			{
-				shop.item[nextSlot].SetDefaults(490);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(491);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(489);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(2998);
-				nextSlot++;
-			}
-			if (NPC.downedQueenSlime)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalGuilt>());
-				nextSlot++;
-			}
-			if (NPC.downedMechBoss1)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SteelPetal1>());
-				nextSlot++;
-			}
-			if (NPC.downedMechBoss2)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SteelPetal2>());
-				nextSlot++;
-			}
-			if (NPC.downedMechBoss3)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SteelPetal3>());
-				nextSlot++;
-			}
-			if (NPC.downedPlantBoss)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<HeartofGaia>());
-				nextSlot++;
-			}
-			if (NPC.downedGolemBoss)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SolarQuill>());
-				nextSlot++;
-			}
-			if (NPC.downedFishron)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<ClippedFin>());
-				nextSlot++;
-			}
-			if (NPC.downedMartians)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<ElectroDrive>());
-				nextSlot++;
-			}
-			if (NPC.downedAncientCultist)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrackedBeak>());
-				nextSlot++;
-			}
-			if (NPC.downedTowerSolar)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SolarCore>());
-				nextSlot++;
-			}
-			if (NPC.downedTowerStardust)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<StardustCore>());
-				nextSlot++;
-			}
-			if (NPC.downedTowerVortex)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<VortexCore>());
-				nextSlot++;
-			}
-			if (NPC.downedTowerNebula)
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<NebulaCore>());
-				nextSlot++;
-			}
-			if (NPC.downedMoonlord)   //this make so when Moon Lord is killed the town npc will sell this
-			{
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChaliceoftheMoon>());
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(3456);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(3457);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(3458);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(3459);
-				nextSlot++;
-			}
+		public override void AddShops()
+		{
+			var npcShop = new NPCShop(Type, ShopName)
+
+				.Add<AdventurersLocket>()
+				.Add<CrystalTear>(Condition.DownedKingSlime)
+				.Add<BloodyLens>(Condition.DownedEyeOfCthulhu)
+				.Add<UnholyHeart>(Condition.DownedEowOrBoc)
+				.Add(ItemID.HoneyComb, Condition.DownedQueenBee)
+				.Add<SkullNecklace>(Condition.DownedSkeletron)
+				.Add<AllSeeingEye>(Condition.DownedDeerclops)
+				.Add<EmptyEmblem>(Condition.Hardmode)
+				.Add<CrystalGuilt>(Condition.DownedQueenSlime)
+				.Add<FlowerofSteel>(Condition.DownedMechBossAll)
+				.Add<HeartofGaia>(Condition.DownedPlantera)
+				.Add<SolarQuill>(Condition.DownedGolem)
+				.Add<ClippedFin>(Condition.DownedDukeFishron)
+				.Add<CrashingMedallion>(Condition.DownedEmpressOfLight)
+				.Add<ElectroDrive>(Condition.DownedMartians)
+				.Add<CrackedBeak>(Condition.DownedCultist)
+				.Add<SolarCore>(Condition.DownedSolarPillar)
+				.Add<StardustCore>(Condition.DownedStardustPillar)
+				.Add<VortexCore>(Condition.DownedVortexPillar)
+				.Add<NebulaCore>(Condition.DownedNebulaPillar)
+				.Add<ChaliceoftheMoon>(Condition.DownedMoonLord)
+				.Add(ItemID.FragmentSolar, Condition.DownedMoonLord)
+				.Add(ItemID.FragmentStardust, Condition.DownedMoonLord)
+				.Add(ItemID.FragmentVortex, Condition.DownedMoonLord)
+				.Add(ItemID.FragmentNebula, Condition.DownedMoonLord);
+
+            npcShop.Register();
 		}
 
 		public override string GetChat()       //Allows you to give this town NPC a chat message when a player talks to it.

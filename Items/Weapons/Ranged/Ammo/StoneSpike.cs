@@ -9,8 +9,8 @@ namespace Illuminum.Items.Weapons.Ranged.Ammo
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Stone Spike");
-			Tooltip.SetDefault("Slightly dull... still hurts though...");
+			// DisplayName.SetDefault("Stone Spike");
+			// Tooltip.SetDefault("Slightly dull... still hurts though...");
 		}
 
 		public override void SetDefaults()

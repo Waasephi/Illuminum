@@ -8,7 +8,7 @@ namespace Illuminum.Items.Tools
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Angelite Hamaxe");
+			// DisplayName.SetDefault("Angelite Hamaxe");
 		}
 
 		public override void SetDefaults()

@@ -8,7 +8,7 @@ namespace Illuminum.Projectiles.Melee.HM
 {
     public class PumpkinBomb : ModProjectile
     {
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Pumpkin Bomb");
+        //public override void SetStaticDefaults() => DisplayName.SetDefault("Pumpkin Bomb");
 
         public override void SetDefaults()
         {

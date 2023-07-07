@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Nebula Emblem");
-			 Tooltip.SetDefault("A proof of mastery." +
-                "\n+25% Magic Damage.");
+			// DisplayName.SetDefault("Nebula Emblem");
+			 /* Tooltip.SetDefault("A proof of mastery." +
+                "\n+25% Magic Damage."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

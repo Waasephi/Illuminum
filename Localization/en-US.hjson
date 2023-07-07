@@ -1,0 +1,1419 @@
+Mods: {
+	Illuminum: {
+		Buffs: {
+			AngelsGuard: {
+				DisplayName: Angel's Guard
+				Description: Protected by the angels
+			}
+
+			BloodFlame: {
+				DisplayName: Blood Flame
+				Description: Your blood is boiling!
+			}
+
+			PossessedCandleBuff: {
+				DisplayName: Possessed Candle
+				Description: How attractive! But not in the way you might think...
+			}
+
+			DragonGash: {
+				DisplayName: Dragon Gash
+				Description: You just... aren't supposed to have this...
+			}
+
+			MiniDragonBuff: {
+				DisplayName: Mini Dragon?
+				Description: This... is a dragon?
+			}
+
+			HematiteReaverBuff: {
+				DisplayName: Hematite Reaver
+				Description: A Hematite Reaver will fight for you
+			}
+
+			ClottieBuff: {
+				DisplayName: Clottie
+				Description: Look at how cute it is?
+			}
+		}
+
+		Items: {
+			AbyssalMaw: {
+				DisplayName: Abyssal Maw
+				Tooltip:
+					'''
+					Grants Immunity to knockback and most debuffs
+					+5% Damage Reduction
+					Allows the player to dash into the enemy
+					Double tap a direction
+					[c/4f4f4f:Embrace the Void.]
+					'''
+			}
+
+			AngeliteWings: {
+				DisplayName: Angelite Wings
+				Tooltip: Allows flight and slow fall
+			}
+
+			BlackenedCrystal: {
+				DisplayName: Blackened Crystal
+				Tooltip:
+					'''
+					It emanates cursed energy.
+					Immunity to blackout... At a cost?
+					'''
+			}
+
+			CharmOfRemorse: {
+				DisplayName: Charm of Remorse
+				Tooltip:
+					'''
+					Having max mana increases magic damage by 60%, having below 1/3rd mana doubles your mana regen
+					'Your guilt resonates with this gem'
+					'''
+			}
+
+			ClippedFin: {
+				DisplayName: Clipped Fin
+				Tooltip:
+					'''
+					+25% movement speed when wet.
+					Increases your movement capabilities.
+					'I'm not going fast enough'
+					'''
+			}
+
+			CrackedBeak: {
+				DisplayName: Cracked Beak
+				Tooltip:
+					'''
+					+2 Minion Slots.
+					Has a faint magic energy.
+					'''
+			}
+
+			CrashingMedallion: {
+				DisplayName: Crashing Medallion
+				Tooltip:
+					'''
+					Removes all flight time, but greatly boosts defensive stats
+					'Become the immovable object'
+					'''
+			}
+
+			CrystalGuilt: {
+				DisplayName: Crystal Guilt
+				Tooltip:
+					'''
+					Having max mana increases your magic damage by 50%
+					'Your sorrows resonate with this gem'
+					'''
+			}
+
+			DragonScaleNecklace: {
+				DisplayName: Dragon Scale Necklace
+				Tooltip:
+					'''
+					+20 Armor Penetration.
+					Its still warm.
+					'''
+			}
+
+			ElectroDrive: {
+				DisplayName: Electro Drive
+				Tooltip:
+					'''
+					Releases Electrosphere Blasts on taking damage.
+					Shockingly Advanced!
+					'''
+			}
+
+			EnvenomedGauntlet: {
+				DisplayName: Envenomed Gauntlet
+				Tooltip:
+					'''
+					Don't touch it. 
+					+12% Melee Speed and gives melee weapons autoswing
+					+10% Melee Damage
+					Increased Knockback
+					Thorns and Flask of Venom effects.
+					'''
+			}
+
+			FlowerofSteel: {
+				DisplayName: Flower of Steel
+				Tooltip:
+					'''
+					Grants Immunity to Electrified
+					+7% Damage Reduction
+					A Flower of the highest quality.
+					'''
+			}
+
+			FrostStone: {
+				DisplayName: Frost Stone
+				Tooltip:
+					'''
+					Cold to the touch. 
+					Embues the holder with frost strength
+					'''
+			}
+
+			FrozenQuiver: {
+				DisplayName: Frozen Quiver
+				Tooltip:
+					'''
+					Cold to the touch. 
+					Gives Frostbite To Ranged Weapons,
+					+20% Arrow Damage, +10% Ranged Damage,
+					20% Chance to not consume ammo.
+					'''
+			}
+
+			HeartofGaia: {
+				DisplayName: Heart of Gaia
+				Tooltip:
+					'''
+					The Heart of the god of the Earth.
+					Greatly boosts your Health and Regeneration.
+					'''
+			}
+
+			NebulaEmblem: {
+				DisplayName: Nebula Emblem
+				Tooltip:
+					'''
+					+25% Magic Damage
+					'Proof of mastery'
+					'''
+			}
+
+			PrismaticGauntlet: {
+				DisplayName: Prismatic Gauntlet
+				Tooltip:
+					'''
+					It glitters in the light 
+					+12% Whip speed and gives whips autoswing
+					+10% summon damage
+					Increased knockback
+					Whips randomly apply debuffs
+					'''
+			}
+
+			SolarEmblem: {
+				DisplayName: Solar Emblem
+				Tooltip:
+					'''
+					+25% Melee Damage
+					'Proof of mastery'
+					'''
+			}
+
+			SolarQuill: {
+				DisplayName: Solar Quill
+				Tooltip:
+					'''
+					Gives +15% Damage during the day.
+					A quill from ancient times... Who would write with a rock?
+					'''
+			}
+
+			StardustEmblem: {
+				DisplayName: Stardust Emblem
+				Tooltip:
+					'''
+					+25% Summon Damage
+					Proof of mastery
+					'''
+			}
+
+			UnholyShield: {
+				DisplayName: Unholy Shield
+				Tooltip:
+					'''
+					Grants Immunity to knockback
+					+5% Damage Reduction
+					'''
+			}
+
+			ViciousMaw: {
+				DisplayName: Vicious Maw
+				Tooltip:
+					'''
+					Grants Immunity to knockback
+					+7% Damage Reduction
+					Allows the player to dash into the enemy
+					Double tap a direction
+					'''
+			}
+
+			VortexEmblem: {
+				DisplayName: Vortex Emblem
+				Tooltip:
+					'''
+					+25% Ranged Damage
+					'Proof of mastery'
+					'''
+			}
+
+			ChaliceoftheMoon: {
+				DisplayName: Chalice of the Moon
+				Tooltip:
+					'''
+					Releases Lunar Flares on taking damage,
+					Increases all damage by 20%.
+					A Chalice with seemingly unending depth.
+					'''
+			}
+
+			AdventurersLocket: {
+				DisplayName: Adventurer's Locket
+				Tooltip:
+					'''
+					Filled with hopes and dreams.
+					+5% Movement Speed, and increased luck.
+					'''
+			}
+
+			BloodyLens: {
+				DisplayName: Bloody Lens
+				Tooltip:
+					'''
+					When below half health, doubles your crit chance
+					'Glistening in the light'
+					'''
+			}
+
+			BrambleGlove: {
+				DisplayName: Bramble Glove
+				Tooltip:
+					'''
+					Surprisingly comfortable...
+					+15% Melee Speed and gives melee weapons autoswing
+					Minor thorns effect
+					Melee attacks inflict poison
+					'''
+			}
+
+			CopperCross: {
+				DisplayName: Copper Cross
+				Tooltip:
+					'''
+					A pocket cross, good to keep on you.
+					Increases mana regeneration
+					'''
+			}
+
+			CrystalTear: {
+				DisplayName: Crystal Tear
+				Tooltip:
+					'''
+					Having below 1/4th of your max mana doubles your mana regen
+					'Your cries resonate with this gem'
+					'''
+			}
+
+			HoneyHeart: {
+				DisplayName: Honey Heart
+				Tooltip:
+					'''
+					Tempting to eat... except it isn't edible
+					+20 Max Life, Permanent Honey Buff.
+					'''
+			}
+
+			LivingWoodHilt: {
+				DisplayName: Living Wood Hilt
+				Tooltip:
+					'''
+					Easy to attach and detach!
+					+2% Melee Speed.
+					'''
+			}
+
+			MysticArrow: {
+				DisplayName: Mystic Arrow
+				Tooltip:
+					'''
+					Its cursed.
+					+5% Magic Damage
+					-20% Chance to consume ammo
+					-3% Ranged Damage.
+					'''
+			}
+
+			QuartzLacedGlove: {
+				DisplayName: Quartz Laced Glove
+				Tooltip:
+					'''
+					Comfortable and gives a stronger grip.
+					+8% Whip Speed.
+					'''
+			}
+
+			SkullNecklace: {
+				DisplayName: Skull Necklace
+				Tooltip:
+					'''
+					Shoots Bones on taking damage.
+					'Enter the Bone Zone!'
+					'''
+			}
+
+			TinCross: {
+				DisplayName: Tin Cross
+				Tooltip:
+					'''
+					A pocket cross, holding this gives you comfort.
+					Increases mana regeneration
+					'''
+			}
+
+			UnholyHeart: {
+				DisplayName: Unholy Heart
+				Tooltip:
+					'''
+					Taking damage releases mini corruptors to home in on enemies and gives panic and life regeneration
+					'You can feel it beating... gross...'
+					'''
+			}
+
+			EyellusionerHat: {
+				DisplayName: Eye-llusioner Hat
+				Tooltip: ""
+			}
+
+			AngeliteChestplate: {
+				DisplayName: Angelite Chestplate
+				Tooltip:
+					'''
+					+12% all Crit Chance
+					+2 Max Minions
+					'''
+			}
+
+			AngeliteGreaves: {
+				DisplayName: Angelite Greaves
+				Tooltip: +14% Movement Speed
+			}
+
+			AngeliteHalo: {
+				DisplayName: Angelite Halo
+				Tooltip:
+					'''
+					Increases flight time
+					+40 Mana
+					'''
+			}
+
+			DragonscaleGreaves: {
+				DisplayName: Dragonscale Greaves
+				Tooltip:
+					'''
+					+16% Movement Speed
+					Immunity to Knockback
+					'''
+			}
+
+			DragonscaleHelm: {
+				DisplayName: Dragonscale Helm
+				Tooltip:
+					'''
+					+14% Melee Damage
+					+15% Damage Reduction
+					'''
+			}
+
+			DragonscaleMask: {
+				DisplayName: Dragonscale Mask
+				Tooltip:
+					'''
+					+14% Summon Damage
+					+5% Damage Reduction
+					'''
+			}
+
+			DragonscalePlatemail: {
+				DisplayName: Dragonscale Platemail
+				Tooltip:
+					'''
+					Increased Flight Time
+					+2 Max Minions
+					+10% Whip Attack Speed
+					+10% Melee Armor Penetration
+					'''
+			}
+
+			CrimriseBoots: {
+				DisplayName: Crimrise Boots
+				Tooltip: +10% Movement Speed
+			}
+
+			CrimriseChestpiece: {
+				DisplayName: Crimrise Chestpiece
+				Tooltip: +3% Damage, Immunity to Feral Bite
+			}
+
+			CrimriseHat: {
+				DisplayName: Crimrise Hat
+				Tooltip: +50 Mana
+			}
+
+			DarkSteelChestguard: {
+				DisplayName: Darksteel Chestguard
+				Tooltip: +9% Damage
+			}
+
+			DarkSteelGreaves: {
+				DisplayName: Darksteel Greaves
+				Tooltip: +8% Movement Speed
+			}
+
+			DarkSteelHat: {
+				DisplayName: Darksteel Hat
+				Tooltip: +9% Magic Crit Chance, +40 Mana
+			}
+
+			DarkSteelHelmet: {
+				DisplayName: Darksteel Helmet
+				Tooltip: +9% Melee Crit Chance
+			}
+
+			DarkSteelVisor: {
+				DisplayName: Darksteel Visor
+				Tooltip: +9% Ranged Crit Chance
+			}
+
+			GlacialHat: {
+				DisplayName: Glacial Hat
+				Tooltip: +6% Ranged Crit
+			}
+
+			GlacialLongcoat: {
+				DisplayName: Glacial Longcoat
+				Tooltip: +7% Ranged Damage, Immunity to Chilled
+			}
+
+			GlacialPants: {
+				DisplayName: Glacial Pants
+				Tooltip:
+					'''
+
+					+10% Movement Speed
+					'''
+			}
+
+			HematiteChestplate: {
+				DisplayName: Hematite Chestplate
+				Tooltip: +12% Damage, +40 mana
+			}
+
+			HematiteLeggings: {
+				DisplayName: Hematite Leggings
+				Tooltip: +10% Movement Speed
+			}
+
+			HematiteMask: {
+				DisplayName: Hematite Mask
+				Tooltip: +12% crit chance, +1 minion slot
+			}
+
+			OvergrowthCrown: {
+				DisplayName: Overgrowth Crown
+				Tooltip:
+					'''
+					+7% Summoner Damage
+					+40 Mana
+					+1 Max Minion
+					'''
+			}
+
+			QuartzCoat: {
+				DisplayName: Quartz Coat
+				Tooltip: +2% Damage Reduction
+			}
+
+			QuartzHood: {
+				DisplayName: Quartz Hood
+				Tooltip: +6% Ranged Damage
+			}
+
+			QuartzPants: {
+				DisplayName: Quartz Pants
+				Tooltip: +4% Movement Speed
+			}
+
+			BlastBugBanner: {
+				DisplayName: Blast Bug Banner
+				Tooltip: ""
+			}
+
+			QuartzSlimeBanner: {
+				DisplayName: Quartz Slime Banner
+				Tooltip: ""
+			}
+
+			AngeliteChunk: {
+				DisplayName: Angelite Chunk
+				Tooltip: ""
+			}
+
+			BrimstoneCrystal: {
+				DisplayName: Brimstone Crystal
+				Tooltip: A red crystal stuck in solidified ash. It is very warm.
+			}
+
+			DragonScale: {
+				DisplayName: Dragon Scale
+				Tooltip: It is warm to the touch.
+			}
+
+			NebulaCore: {
+				DisplayName: Nebula Core
+				Tooltip: ""
+			}
+
+			RefinedAngelite: {
+				DisplayName: Refined Angelite
+				Tooltip: ""
+			}
+
+			SolarCore: {
+				DisplayName: Solar Core
+				Tooltip: ""
+			}
+
+			StardustCore: {
+				DisplayName: Stardust Core
+				Tooltip: ""
+			}
+
+			SteelPetal1: {
+				DisplayName: Steel Petal
+				Tooltip: A sharp chunk of steel. It has a slight shock feeling...
+			}
+
+			SteelPetal2: {
+				DisplayName: Steel Petal
+				Tooltip: A sharp chunk of steel. It has a slight shock feeling...
+			}
+
+			SteelPetal3: {
+				DisplayName: Steel Petal
+				Tooltip: A sharp chunk of steel. It has a slight shock feeling...
+			}
+
+			VortexCore: {
+				DisplayName: Vortex Core
+				Tooltip: ""
+			}
+
+			BloodShard: {
+				DisplayName: Blood Shard
+				Tooltip: "'A chunk of coagulated blood'"
+			}
+
+			DarksteelPlating: {
+				DisplayName: Darksteel Plating
+				Tooltip: A very durable plating, slightly hurts to hold.
+			}
+
+			HematiteChunk: {
+				DisplayName: Hematite Chunk
+				Tooltip: A chunk of fossilized blood, it is very smooth.
+			}
+
+			QuartzChunk: {
+				DisplayName: Quartz Chunk
+				Tooltip: ""
+			}
+
+			QuartzIngot: {
+				DisplayName: Quartz Ingot
+				Tooltip: ""
+			}
+
+			VialofEvil: {
+				DisplayName: Vial of Evil
+				Tooltip: ""
+			}
+
+			PossessedCandle: {
+				DisplayName: Possessed Candle
+				Tooltip: Summons a possessed water candle to increase spawnrates
+			}
+
+			AngeliteHamaxe: {
+				DisplayName: Angelite Hamaxe
+				Tooltip: ""
+			}
+
+			AngelitePickaxe: {
+				DisplayName: Angelite Pickaxe
+				Tooltip: ""
+			}
+
+			GlacialHatchet: {
+				DisplayName: Glacial Hatchet
+				Tooltip: Inflicts frostbite
+			}
+
+			QuartzAxe: {
+				DisplayName: Quartz Axe
+				Tooltip: ""
+			}
+
+			QuartzHammer: {
+				DisplayName: Quartz Hammer
+				Tooltip: ""
+			}
+
+			QuartzPickaxe: {
+				DisplayName: Quartz Pickaxe
+				Tooltip: ""
+			}
+
+			AngeliteStaff: {
+				DisplayName: Angelite Staff
+				Tooltip: Shoots Crystals from the sky
+			}
+
+			BrimstoneTome: {
+				DisplayName: Brimstone Wave
+				Tooltip: ""
+			}
+
+			GreenJellyStaff: {
+				DisplayName: Green Jelly Staff
+				Tooltip: Shoots bouncing balls of electrified gel that explode into electricity
+			}
+
+			Bloodfall: {
+				DisplayName: Bloodfall
+				Tooltip:
+					'''
+					Use your life to shoot bloodstone bolts from the sky
+					'An eye for an eye'
+					'''
+			}
+
+			BloodstoneStaff: {
+				DisplayName: Bloodstone Staff
+				Tooltip:
+					'''
+					Uses your life to spew blood at your foes
+					'An eye for an eye'
+					'''
+			}
+
+			Bloodstream: {
+				DisplayName: Bloodstream
+				Tooltip:
+					'''
+					Shoots streams of blood
+					Meteor armor reduces mana cost to 0
+					'''
+			}
+
+			BlueJellyTrident: {
+				DisplayName: Blue Jelly Trident
+				Tooltip: Shoots bouncing balls of electrified gel
+			}
+
+			CursedBloom: {
+				DisplayName: Cursed Bloom
+				Tooltip: ""
+			}
+
+			VileStaff: {
+				DisplayName: Vile Staff
+				Tooltip: Spawns Vile Bolts around the player, releasing shoots at the cursor.
+			}
+
+			GlacialTrident: {
+				DisplayName: Glacial Trident
+				Tooltip: ""
+			}
+
+			MahoganyStaff: {
+				DisplayName: Mahogany Staff
+				Tooltip: Rapidly shoots leaves
+			}
+
+			PinkJellyWand: {
+				DisplayName: Pink Jelly Wand
+				Tooltip: Shoots balls of gel that explode into electricity
+			}
+
+			QuartzStaff: {
+				DisplayName: Quartz Staff
+				Tooltip: ""
+			}
+
+			AngeliteBroadsword: {
+				DisplayName: Angelite Broadsword
+				Tooltip: Shoots crystal chunks that burst into shards.
+			}
+
+			BlindingSun: {
+				DisplayName: Blinding Sun
+				Tooltip:
+					'''
+					Shoots 2 beams of sunlight
+					Melee hits inflict Daybroken and spawn a fireball on crits
+					The beams of sunlight pierce infinitely for a short duration
+					'Blinding like an eclipse'
+					'''
+			}
+
+			BrimstoneBuster: {
+				DisplayName: Brimstone Buster
+				Tooltip:
+					'''
+					Shoots swift brimstone slashes and inflicts hellfire
+					Critical hits cause explosions with the blade
+					'''
+			}
+
+			Daylight: {
+				DisplayName: Daylight
+				Tooltip:
+					'''
+					Inflicts daybroken
+					'A sparkling star'
+					'''
+			}
+
+			DragonHammer: {
+				DisplayName: Dragon Hammer
+				Tooltip: Explodes hit enemies
+			}
+
+			GigatonHammer: {
+				DisplayName: Gigaton Hammer
+				Tooltip:
+					'''
+					Does more damage to injured enemies
+					'Kill em dead'
+					'''
+			}
+
+			GodsGavel: {
+				DisplayName: God's Gavel
+				Tooltip:
+					'''
+					Hitting the ground causes stars to erupt from the earth
+					Does more damage to healthy enemies
+					'Smite them in the name of the Lord!'
+					'''
+			}
+
+			MegatonHammer: {
+				DisplayName: Megaton Hammer
+				Tooltip:
+					'''
+					Does more damage to injured enemies
+					'Kill em dead'
+					'''
+			}
+
+			PearlwoodClub: {
+				DisplayName: Pearlwood Club
+				Tooltip:
+					'''
+					Deals more damage to enemies under half health and confuses on hit
+					Hitting the ground erupts into unicorn horns
+					'''
+			}
+
+			Sol: {
+				DisplayName: Sol
+				Tooltip:
+					'''
+					Shoots a beam of sunlight and inflicts Daybroken on melee hits
+					The beams of sunlight pierce infinitely for a short duration
+					'Shining like the sun'
+					'''
+			}
+
+			SpookyWoodClub: {
+				DisplayName: Spooky Wood Club
+				Tooltip:
+					'''
+					Deals more damage to enemies under half health and confuses on hit
+					Erupts into exploding pumpkin bombs when hitting the ground
+					'''
+			}
+
+			AmberBroadsword: {
+				DisplayName: Amber Broadsword
+				Tooltip: ""
+			}
+
+			AmberShortsword: {
+				DisplayName: Amber Shortsword
+				Tooltip: ""
+			}
+
+			AmethystBroadsword: {
+				DisplayName: Amethyst Broadsword
+				Tooltip: ""
+			}
+
+			AmethystShortsword: {
+				DisplayName: Amethyst Shortsword
+				Tooltip: ""
+			}
+
+			BloodstoneDagger: {
+				DisplayName: Bloodstone Dagger
+				Tooltip:
+					'''
+					Uses your life to damage foes
+					Hitting enemies steals life and inflicts Bloodflame
+					'An eye for an eye'
+					'''
+			}
+
+			BloodstoneTrident: {
+				DisplayName: Bloodstone Trident
+				Tooltip:
+					'''
+					Use your life to shoot 3 randomly spreading bolts
+					'An eye for an eye'
+					'''
+			}
+
+			CursedBrand: {
+				DisplayName: Cursed Brand
+				Tooltip:
+					'''
+					Inflicts cursed inferno
+					Critical hits cause cursed flames to erupt from enemies
+					'''
+			}
+
+			CursedFlamarang: {
+				DisplayName: Cursed Flamarang
+				Tooltip: Randomly drops cursed flames
+			}
+
+			ClotStaff: {
+				DisplayName: Clot Staff
+				Tooltip: Summons a glob of blood to fight for you
+			}
+
+			DiamondBroadsword: {
+				DisplayName: Diamond Broadsword
+				Tooltip: ""
+			}
+
+			DiamondShortsword: {
+				DisplayName: Diamond Shortsword
+				Tooltip: ""
+			}
+
+			VileLance: {
+				DisplayName: Vile Lance
+				Tooltip: Spawns exploding poison balls on enemy hit
+			}
+
+			VileLeash: {
+				DisplayName: Vile Leash
+				Tooltip: ""
+			}
+
+			EmeraldBroadsword: {
+				DisplayName: Emerald Broadsword
+				Tooltip: ""
+			}
+
+			EmeraldShortsword: {
+				DisplayName: Emerald Shortsword
+				Tooltip: ""
+			}
+
+			GladiantGlaive: {
+				DisplayName: Gladiant Glaive
+				Tooltip: Shoots a lingering spectral glaive.
+			}
+
+			GraniteCore: {
+				DisplayName: Granite Core
+				Tooltip: Shoots an electric laser at the cursor.
+			}
+
+			GraniteWarhammer: {
+				DisplayName: Granite Warhammer
+				Tooltip: Hitting the ground spawns blasts of electricity
+			}
+
+			HematiteKnives: {
+				DisplayName: Hematite Knives
+				Tooltip: Shoots a spread of small knives.
+			}
+
+			IceBall: {
+				DisplayName: Ice Ball
+				Tooltip: Shoots a frost bolt at the cursor
+			}
+
+			MahoganyClub: {
+				DisplayName: Mahogany Club
+				Tooltip: Deals more damage to enemies under half health and confuses on hit
+			}
+
+			NaturesMallet: {
+				DisplayName: Nature's Mallet
+				Tooltip: Hitting an enemy gives dryad's blessing
+			}
+
+			QuartzKnife: {
+				DisplayName: Quartz Knife
+				Tooltip: Creates a slash that repels and bleeds enemies.
+			}
+
+			RubyBroadsword: {
+				DisplayName: Ruby Broadsword
+				Tooltip: ""
+			}
+
+			RubyShortsword: {
+				DisplayName: Ruby Shortsword
+				Tooltip: ""
+			}
+
+			SapphireBroadsword: {
+				DisplayName: Sapphire Broadsword
+				Tooltip: ""
+			}
+
+			SapphireShortsword: {
+				DisplayName: Sapphire Shortsword
+				Tooltip: ""
+			}
+
+			Throwflake: {
+				DisplayName: Throwflake
+				Tooltip: ""
+			}
+
+			TopazBroadsword: {
+				DisplayName: Topaz Broadsword
+				Tooltip: ""
+			}
+
+			TopazShortsword: {
+				DisplayName: Topaz Shortsword
+				Tooltip: ""
+			}
+
+			WoodenClub: {
+				DisplayName: Wooden Club
+				Tooltip: Deals more damage to enemies at low health and confuses on hit
+			}
+
+			AshBall: {
+				DisplayName: Ash Ball
+				Tooltip: Slightly Warm
+			}
+
+			BloodstoneArrow: {
+				DisplayName: Bloodstone Arrow
+				Tooltip: Inflicts bloodflame on hit
+			}
+
+			BloodstoneBullet: {
+				DisplayName: Bloodstone Bullet
+				Tooltip: Inflicts bloodflame on hit
+			}
+
+			StoneSpike: {
+				DisplayName: Stone Spike
+				Tooltip: Slightly dull... still hurts though...
+			}
+
+			AngeliteLongbow: {
+				DisplayName: Angelite Longbow
+				Tooltip: Wooden Arrows turn into Crystal Bolts.
+			}
+
+			Brimlance: {
+				DisplayName: Brimlance
+				Tooltip: ""
+			}
+
+			BloodstoneBlaster: {
+				DisplayName: Bloodstone Blaster
+				Tooltip:
+					'''
+					Shoots 2 bullets at above half max life
+					Using this gun above half max life drain health
+					'An eye for an eye'
+					'''
+			}
+
+			BloodstoneBow: {
+				DisplayName: Bloodstone Bow
+				Tooltip:
+					'''
+					Shoots 2 arrows at above half max life
+					Using this bow above half max life drain health
+					'An eye for an eye'
+					'''
+			}
+
+			BloodyDartPistol: {
+				DisplayName: Bloody Dart Pistol
+				Tooltip: Lumpy and smooth.
+			}
+
+			CursedFury: {
+				DisplayName: Cursed Fury
+				Tooltip: Wooden Arrows turn into Cursed Flame Arrows.
+			}
+
+			DemonPipe: {
+				DisplayName: Demon Pipe
+				Tooltip: I don't know if you should put this by your mouth...
+			}
+
+			VilePistol: {
+				DisplayName: Vile Pistol
+				Tooltip: Bullets turn into exploding poison balls
+			}
+
+			EnchantedLongbow: {
+				DisplayName: Enchanted Longbow
+				Tooltip: Wooden Arrows turn into Jester Arrows.
+			}
+
+			Gloopie: {
+				DisplayName: Gloopie
+				Tooltip: ""
+			}
+
+			GunFish: {
+				DisplayName: Gun Fish
+				Tooltip: ""
+			}
+
+			HematiteRainBow: {
+				DisplayName: Hematite Rain-Bow
+				Tooltip:
+					'''
+					Wooden Arrows turn into Bones that rain from the sky
+					All other Arrows turn into Bone Arrows
+					'''
+			}
+
+			PalmWoodReed: {
+				DisplayName: Palm Wood Reed
+				Tooltip: Don't get a splinter.
+			}
+
+			QuartzBow: {
+				DisplayName: Quartz Bow
+				Tooltip: ""
+			}
+
+			SandCannon: {
+				DisplayName: Sand Cannon
+				Tooltip: Shoots a spread of sand.
+			}
+
+			SnowballHandMortar: {
+				DisplayName: Snowball Hand Mortar
+				Tooltip: Shoots a spread of snowballs.
+			}
+
+			SporeBomb: {
+				DisplayName: Spore Bomb
+				Tooltip: ""
+			}
+
+			DragonClaw: {
+				DisplayName: Dragon Claw
+				Tooltip:
+					'''
+					10 Summon Tag Damage
+					Inflicts Betsy's Curse
+					'''
+			}
+
+			DragonWand: {
+				DisplayName: Dragon Wand
+				Tooltip: Summons a Mini Dragon to fight for you
+			}
+
+			ArteryWhip: {
+				DisplayName: Artery Whip
+				Tooltip:
+					'''
+					Uses your life to damage foes
+					Shoots a blood stream on enemy hit
+					'An eye for an eye'
+					'''
+			}
+
+			VileChain: {
+				DisplayName: Vile Chain
+				Tooltip: Has little to no damage fall off between hitting multiple enemies
+			}
+
+			HematiteTotem: {
+				DisplayName: Hematite Totem
+				Tooltip: Summons a Hematite Reaver to fight for you.
+			}
+
+			AngeliteAltarItem: {
+				DisplayName: Angelite Altar
+				Tooltip:
+					'''
+					Combines many stations into one, used for new crafting recipes.
+					Cursed Forge, Hardmode Anvils, Hardmode Forges, and Altars Included.
+					'''
+			}
+
+			AngeliteBrick: {
+				DisplayName: Angelite Brick
+				Tooltip: ""
+			}
+
+			CursedForgeItem: {
+				DisplayName: Cursed Forge
+				Tooltip:
+					'''
+					Combines many stations into one, used for new crafting recipes.
+					Workbench, Anvil, Hellforge, Tinkerer's Workshop, Cooking Pot all included.
+					'''
+			}
+
+			AngeliteCandle: {
+				DisplayName: Angelite Candle
+				Tooltip: ""
+			}
+
+			AngeliteChair: {
+				DisplayName: Angelite Chair
+				Tooltip: ""
+			}
+
+			AngeliteDoor: {
+				DisplayName: Angelite Door
+				Tooltip: ""
+			}
+
+			AngeliteLamp: {
+				DisplayName: Angelite Lamp
+				Tooltip: ""
+			}
+
+			AngeliteLantern: {
+				DisplayName: Angelite Lantern
+				Tooltip: ""
+			}
+
+			AngeliteTable: {
+				DisplayName: Angelite Table
+				Tooltip: ""
+			}
+
+			QuartzBrick: {
+				DisplayName: Quartz Brick
+				Tooltip: ""
+			}
+
+			AngeliteBrickWall: {
+				DisplayName: Angelite Brick Wall
+				Tooltip: ""
+			}
+
+			QuartzBrickWall: {
+				DisplayName: Quartz Brick Wall
+				Tooltip: ""
+			}
+
+			EmptyEmblem: {
+				DisplayName: Empty Emblem
+				Tooltip: Can be turned into a class emblem at a Demon Altar
+			}
+
+			PipeBomb: {
+				DisplayName: Pipe Bomb
+				Tooltip: ""
+			}
+
+			AllSeeingEye: {
+				DisplayName: All Seeing Eye
+				Tooltip: Allows you to see everything
+			}
+
+			FeatherShot: {
+				DisplayName: Feather Shot
+				Tooltip: Wooden Arrows turn into Feathers
+			}
+
+			MysticWatch: {
+				Tooltip: Speeds up time to the next Day or Night
+				DisplayName: Mystic Watch
+			}
+
+			EnchantedWand: {
+				DisplayName: Enchanted Wand
+				Tooltip: Shoots a homing star
+			}
+
+			PotSnailUGItem: {
+				DisplayName: Snail in a Pot
+				Tooltip: Its a Snail in a pot, what could go wrong?
+			}
+
+			PotSnailIceItem: {
+				DisplayName: Snail in a Pot
+				Tooltip: Its a snail in a pot, what could go wrong?
+			}
+
+			PotSnailDungeonItem: {
+				DisplayName: Snail in a Pot
+				Tooltip: Its a snail in a pot, what could go wrong?
+			}
+
+			PotSnailJungleItem: {
+				DisplayName: Snail in a Pot
+				Tooltip: Its a snail in a pot, what could go wrong?
+			}
+
+			VileLeggings: {
+				Tooltip: +10% Movement Speed
+				DisplayName: Vile Leggings
+			}
+
+			VileHelmet: {
+				Tooltip: +7% Damage
+				DisplayName: Vile Helmet
+			}
+
+			VileChestplate: {
+				Tooltip: +3% Damage Reduction
+				DisplayName: Vile Chestplate
+			}
+
+			VialofToxins: {
+				DisplayName: Vial of Toxins
+				Tooltip:
+					'''
+					Attacks inflict poison
+					If above 100 health, poisons the player, but gives a flat +5 damage
+					'It smells really bad'
+					'''
+			}
+		}
+
+		NPCs: {
+			QuartzSlime.DisplayName: Quartz Slime
+
+			Explorer: {
+				DisplayName: Explorer
+
+				TownNPCMood: {
+					Princess_LovesNPC: I like {NPCName}.
+					LikeNPC_Princess: I like {NPCName}.
+					HateNPC: I hate {NPCName}.
+					DislikeNPC: I dislike {NPCName}.
+					LikeNPC: I like {NPCName}.
+					LoveNPC: I love {NPCName}.
+					DislikeBiome: I dislike {BiomeName}.
+					LikeBiome: I like {BiomeName}.
+					LoveBiome: I love {BiomeName}.
+					HateCrowded: I hate how crowded I am.
+					DislikeCrowded: I dislike how crowded I am.
+					LoveSpace: I love having so much space.
+					FarFromHome: I am too far from home.
+					NoHome: I hate not having a home.
+					Content: I am content.
+				}
+			}
+
+			PotSnailUG.DisplayName: Pot Snail
+			PotSnailIce.DisplayName: Pot Snail
+			PotSnailDungeon.DisplayName: Pot Snail
+			PotSnailJungle.DisplayName: Pot Snail
+		}
+
+		Projectiles: {
+			AshBallProjectile.DisplayName: Ash Ball Projectile
+			BloodstoneArrowProjectile.DisplayName: Bloodstone Arrow
+			BloodstoneBulletProjectile.DisplayName: Bloodstone Bullet
+			StoneSpikeProjectile.DisplayName: Stone Spike
+			GreenJellyBall.DisplayName: Green Jelly Ball
+			BlueJellyBall.DisplayName: Blue Jelly Ball
+			VileBolt.DisplayName: Vile Shot
+			PinkJellyBall.DisplayName: Pink Jelly Ball
+			QuartzBolt.DisplayName: Quartz Bolt
+			PumpkinBomb.DisplayName: Pumpkin Bomb
+			RadianceProj.DisplayName: Radiance
+			UnicornSpike.DisplayName: Unicorn Spike
+			AmberShortswordProjectile.DisplayName: Amber Shortsword
+			AmethystShortswordProjectile.DisplayName: Amethyst Shortsword
+			BloodstoneDaggerProjectile.DisplayName: Bloodstone Dagger
+			BloodstoneTridentProjectile.DisplayName: Bloodstone Trident
+			CursedFlamarangProjectile.DisplayName: Cursed Flamarang
+			DiamondShortswordProjectile.DisplayName: Diamond Shortsword
+			VileLanceProjectile.DisplayName: Vile Lance
+			VileLeashProjectile.DisplayName: Vile Leash
+			EmeraldShortswordProjectile.DisplayName: Emerald Shortsword
+			GladiantGlaiveProjectile.DisplayName: Gladiant Glaive
+			GraniteCoreProjectile.DisplayName: Granite Core
+			HematiteKnife.DisplayName: Hematite Knife
+			IceBallProjectile.DisplayName: Ice Ball
+			PhantomGGlaive.DisplayName: Phantom Glaive
+			QuartzKnife1.DisplayName: Quartz Knife
+			QuartzKnife2.DisplayName: Quartz Knife
+			RubyShortswordProjectile.DisplayName: Ruby Shortsword
+			SapphireShortswordProjectile.DisplayName: Sapphire Shortsword
+			ThrowflakeProjectile.DisplayName: Throwflake
+			TopazShortswordProjectile.DisplayName: Topaz Shortsword
+			BrimstoneWave.DisplayName: Brimstone Wave
+			BloodstoneBolt.DisplayName: Bloodstone Bolt
+			PossessedCandlePetProjectile.DisplayName: Possessed Candle
+			BrimlanceProjectile.DisplayName: Brimlance
+			SporeBombProjectile.DisplayName: Spore Bomb
+			DragonClawProjectile.DisplayName: Dragon Claw
+			MiniDragon.DisplayName: Mini Dragon
+			HematiteReaver.DisplayName: Hematite Reaver
+			ArteryWhipProjectile.DisplayName: Artery Whip
+			VileChainProjectile.DisplayName: Vile Chain
+			Clottie.DisplayName: Clottie
+			HMHammerHit.DisplayName: Hammer Hit
+			PreHMHammerHit.DisplayName: Hammer Hit
+			FeatherArrowProjectile.DisplayName: Feather Arrow
+			AngeliteBroadswordProj2.DisplayName: Angelite Broadsword
+			AngeliteBroadswordProj.DisplayName: Angelite Broadsword
+			PotSnailUGPot.DisplayName: Pot Snail U G Pot
+			PotSnailUGItemProjectile.DisplayName: Pot Snail U G Item Projectile
+			PotSnailIcePot.DisplayName: Pot Snail Ice Pot
+			PotSnailCorruptionPot.DisplayName: Pot Snail Corruption Pot
+			PotSnailDesertPot.DisplayName: Pot Snail Desert Pot
+			PotSnailDungeonPot.DisplayName: Pot Snail Dungeon Pot
+			PotSnailHellPot.DisplayName: Pot Snail Hell Pot
+			PotSnailJunglePot.DisplayName: Pot Snail Jungle Pot
+			PotSnailTemplePot.DisplayName: Pot Snail Temple Pot
+			VileShot.DisplayName: Vile Shot
+			VileShotRanged.DisplayName: Vile Shot
+			VileShotSplash.DisplayName: Vile Shot
+			VileShotMelee.DisplayName: Vile Shot
+		}
+
+		Tiles: {
+			AngeliteAltar.MapEntry: Angelite Altar
+			CursedForge.MapEntry: Cursed Forge
+			AngeliteCandleTile.MapEntry: Candle
+			AngeliteDoorClosed.MapEntry: Angelite Door
+			AngeliteDoorOpen.MapEntry: Angelite Door
+			AngeliteLampTile.MapEntry: Angelite Lamp
+			AngeliteLanternTile.MapEntry: Angelite Lantern
+			AngeliteTableTile.MapEntry: Angelite Table
+		}
+	}
+}

@@ -27,7 +27,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Topaz Shortsword");
+			 // DisplayName.SetDefault("Topaz Shortsword");
 		}
 
 		public override void SetDefaults()

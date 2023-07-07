@@ -9,9 +9,9 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Unholy Heart");
-			Tooltip.SetDefault("Taking damage releases mini corruptors to home in on enemies and gives panic and life regeneration" +
-                "\n'You can feel it beating... gross...'");
+			// DisplayName.SetDefault("Unholy Heart");
+			/* Tooltip.SetDefault("Taking damage releases mini corruptors to home in on enemies and gives panic and life regeneration" +
+                "\n'You can feel it beating... gross...'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

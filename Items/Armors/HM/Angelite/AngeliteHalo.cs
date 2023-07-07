@@ -12,9 +12,9 @@ namespace Illuminum.Items.Armors.HM.Angelite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Angelite Halo");
-			Tooltip.SetDefault("Increases flight time" +
-                "\n+40 Mana");
+			// DisplayName.SetDefault("Angelite Halo");
+			/* Tooltip.SetDefault("Increases flight time" +
+                "\n+40 Mana"); */
 			ArmorIDs.Head.Sets.DrawFullHair[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = true;
 		}
 
@@ -49,9 +49,9 @@ namespace Illuminum.Items.Armors.HM.Angelite
 		public override void UpdateArmorSet(Player player)
 		{
 			IlluminumPlayer modPlayer = player.GetModPlayer<IlluminumPlayer>();
-			player.setBonus = "Taking damage causes Angel's Guard for a short amount of time" +
-                "\nAngel's Guard increases immunity time between damage, increases endurance by 20%," +
-                "\nIncreases defense by 8, and increases life regeneration by 2";
+			player.setBonus = "Taking damage causes Angel's Guard for a very short amount of time" +
+                "\nAngel's Guard increases endurance by 50%," +
+                "\nIncreases defense by 15, and increases life regeneration by 2";
 			modPlayer.angeliteSet = true;
 		}
 

@@ -9,7 +9,7 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Quartz Staff");
+			// DisplayName.SetDefault("Quartz Staff");
 			Item.staff[Item.type] = true;
 		}
 

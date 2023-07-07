@@ -11,9 +11,9 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bloodstream");
-			Tooltip.SetDefault("Shoots streams of blood" +
-                "\nMeteor armor reduces mana cost to 0");
+			// DisplayName.SetDefault("Bloodstream");
+			/* Tooltip.SetDefault("Shoots streams of blood" +
+                "\nMeteor armor reduces mana cost to 0"); */
 		}
 
 		public override void SetDefaults()

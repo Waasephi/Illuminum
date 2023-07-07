@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.DarkSteel
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Darksteel Hat");
-			Tooltip.SetDefault("+9% Magic Crit Chance, +40 Mana");
+			// DisplayName.SetDefault("Darksteel Hat");
+			// Tooltip.SetDefault("+9% Magic Crit Chance, +40 Mana");
 			ArmorIDs.Head.Sets.DrawHatHair[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = true;
 		}
 

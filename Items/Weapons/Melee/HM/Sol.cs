@@ -13,10 +13,10 @@ namespace Illuminum.Items.Weapons.Melee.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Sol");
-			Tooltip.SetDefault("Shoots a beam of sunlight and inflicts Daybroken on melee hits" +
+			// DisplayName.SetDefault("Sol");
+			/* Tooltip.SetDefault("Shoots a beam of sunlight and inflicts Daybroken on melee hits" +
                 "\nThe beams of sunlight pierce infinitely for a short duration" +
-                "\n'Shining like the sun'");
+                "\n'Shining like the sun'"); */
 		}
 
 		public override void SetDefaults()
@@ -37,7 +37,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
             Item.shootSpeed = 14f;
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			target.AddBuff(BuffID.Daybreak, 120);
 		}

@@ -8,8 +8,8 @@ namespace Illuminum.Items.Tools
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Glacial Hatchet");
-			Tooltip.SetDefault("Inflicts frostbite");
+			// DisplayName.SetDefault("Glacial Hatchet");
+			// Tooltip.SetDefault("Inflicts frostbite");
 		}
 
 		public override void SetDefaults()
@@ -30,7 +30,7 @@ namespace Illuminum.Items.Tools
 			Item.crit = 10;
 		}
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
             // Add the Onfire buff to the NPC for 1 second when the weapon hits an NPC
             // 60 frames = 1 second

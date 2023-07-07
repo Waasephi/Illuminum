@@ -11,8 +11,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Cursed Fury");
-			Tooltip.SetDefault("Wooden Arrows turn into Cursed Flame Arrows.");
+			// DisplayName.SetDefault("Cursed Fury");
+			// Tooltip.SetDefault("Wooden Arrows turn into Cursed Flame Arrows.");
 		}
 
 		public override void SetDefaults() 

@@ -47,7 +47,7 @@ namespace Illuminum.Projectiles.Ammo
             }
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(ModContent.BuffType<BloodFlame>(), 240);
             SoundEngine.PlaySound(SoundID.Item20, Projectile.position);

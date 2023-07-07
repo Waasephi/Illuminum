@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Crimrise
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Crimrise Chestpiece");
-			Tooltip.SetDefault("+3% Damage, Immunity to Feral Bite");
+			// DisplayName.SetDefault("Crimrise Chestpiece");
+			// Tooltip.SetDefault("+3% Damage, Immunity to Feral Bite");
 		}
 
 		public override void SetDefaults()

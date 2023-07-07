@@ -8,8 +8,8 @@ namespace Illuminum.Items.Materials.HM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Dragon Scale"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("It is warm to the touch.");
+			// DisplayName.SetDefault("Dragon Scale"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("It is warm to the touch.");
 		}
 
 		public override void SetDefaults() 

@@ -14,10 +14,10 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bloodstone Dagger");
-			Tooltip.SetDefault("Uses your life to damage foes" +
+			// DisplayName.SetDefault("Bloodstone Dagger");
+			/* Tooltip.SetDefault("Uses your life to damage foes" +
                 "\nHitting enemies steals life and inflicts Bloodflame" +
-                "\n'An eye for an eye'");
+                "\n'An eye for an eye'"); */
 		}
 
 		public override void SetDefaults()

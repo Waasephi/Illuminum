@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cracked Beak");
-			Tooltip.SetDefault("+2 Minion Slots." +
-                "\nHas a faint magic energy.");
+			// DisplayName.SetDefault("Cracked Beak");
+			/* Tooltip.SetDefault("+2 Minion Slots." +
+                "\nHas a faint magic energy."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

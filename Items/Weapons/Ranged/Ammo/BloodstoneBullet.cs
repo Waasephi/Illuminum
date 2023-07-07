@@ -13,8 +13,8 @@ namespace Illuminum.Items.Weapons.Ranged.Ammo
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bloodstone Bullet");
-			Tooltip.SetDefault("Inflicts bloodflame on hit");
+			// DisplayName.SetDefault("Bloodstone Bullet");
+			// Tooltip.SetDefault("Inflicts bloodflame on hit");
 		}
 
 		public override void SetDefaults()

@@ -9,8 +9,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Enchanted Longbow");
-			Tooltip.SetDefault("Wooden Arrows turn into Jester Arrows.");
+			// DisplayName.SetDefault("Enchanted Longbow");
+			// Tooltip.SetDefault("Wooden Arrows turn into Jester Arrows.");
 		}
 
 		public override void SetDefaults() 

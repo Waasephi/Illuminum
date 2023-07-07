@@ -27,7 +27,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Ruby Shortsword");
+			 // DisplayName.SetDefault("Ruby Shortsword");
 		}
 
 		public override void SetDefaults()

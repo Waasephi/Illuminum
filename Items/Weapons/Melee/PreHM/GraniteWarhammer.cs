@@ -8,6 +8,7 @@ using Illuminum.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
+using Illuminum.Projectiles.Melee.PreHM;
 
 namespace Illuminum.Items.Weapons.Melee.PreHM
 {
@@ -18,11 +19,12 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
         public override float SwingDownSpeed => 16f;
         public override bool CollideWithTiles => true;
         static bool hasHitSomething = false;
+        static bool hasHitEnemies = false;
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Granite Warhammer");
-            Tooltip.SetDefault("Hitting an enemy spawns blasts of electricity");
+            // DisplayName.SetDefault("Granite Warhammer");
+            // Tooltip.SetDefault("Hitting an enemy spawns blasts of electricity");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
@@ -46,25 +48,48 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
         public override void UseAnimation(Player player)
         {
             hasHitSomething = false;
+            hasHitEnemies = false;
         }
 
         public override void OnHitTiles(Player player)
         {
+            if (Main.netMode != NetmodeID.MultiplayerClient)
+            {
+                IlluminumPlayer.ScreenShakeAmount = 8;
+            }
             if (!hasHitSomething)
             {
                 hasHitSomething = true;
+                SoundEngine.PlaySound(SoundID.Item94, player.Center);
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),                       
+                player.Center.Y, 0, 0, ProjectileID.Electrosphere, Item.damage / 2, Item.knockBack = 1, player.whoAmI);
+                SoundEngine.PlaySound(SoundID.DD2_MonkStaffGroundMiss, player.Center);
+                if (!hasHitEnemies)
+                {
+                    Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                    player.Center.Y, 0, 0, ModContent.ProjectileType<PreHMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                }
+                for (int numProjectiles = 0; numProjectiles < 2; numProjectiles++)
+                {
+                    if (Main.netMode != NetmodeID.MultiplayerClient)
+                    {
+                        IlluminumPlayer.ScreenShakeAmount = 8;
+                        
 
-                IlluminumPlayer.ScreenShakeAmount = 8;
-
-
-            SoundEngine.PlaySound(SoundID.DD2_MonkStaffGroundMiss, player.Center);
+                    }
+                }
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            SoundEngine.PlaySound(SoundID.Item94, player.Center);
-            Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(0, 0), Main.rand.NextFloat(0, 0)), ProjectileID.Electrosphere, 25, knockBack / 8, player.whoAmI);
+            if (!hasHitEnemies)
+            {
+                hasHitEnemies = true;
+
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y, 0, 0,
+                ModContent.ProjectileType<PreHMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+            }
         }
 
         public override bool PreDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, ref float rotation, ref float scale, int whoAmI)

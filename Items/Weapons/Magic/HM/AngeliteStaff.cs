@@ -13,8 +13,8 @@ namespace Illuminum.Items.Weapons.Magic.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Angelite Staff");
-			Tooltip.SetDefault("Shoots Crystals from the sky");
+			// DisplayName.SetDefault("Angelite Staff");
+			// Tooltip.SetDefault("Shoots Crystals from the sky");
 			Item.staff[Item.type] = true;
 		}
 
@@ -33,7 +33,7 @@ namespace Illuminum.Items.Weapons.Magic.HM
 			Item.knockBack = 3;
 			Item.value = Item.sellPrice(0, 1, 10, 0);
 			Item.shoot = ProjectileID.CrystalStorm;
-			Item.rare = ItemRarityID.Blue;
+			Item.rare = ItemRarityID.LightRed;
 			Item.UseSound = SoundID.Item43;
 			Item.shootSpeed = 16f;
 		}

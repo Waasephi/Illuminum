@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.DarkSteel
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Darksteel Helmet");
-			Tooltip.SetDefault("+9% Melee Crit Chance");
+			// DisplayName.SetDefault("Darksteel Helmet");
+			// Tooltip.SetDefault("+9% Melee Crit Chance");
 		}
 
 		public override void SetDefaults()

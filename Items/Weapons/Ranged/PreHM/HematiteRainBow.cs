@@ -10,9 +10,9 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Hematite Rain-Bow");
-			Tooltip.SetDefault("Wooden Arrows turn into Bones that rain from the sky" +
-                "\nAll other Arrows turn into Bone Arrows");
+			// DisplayName.SetDefault("Hematite Rain-Bow");
+			/* Tooltip.SetDefault("Wooden Arrows turn into Bones that rain from the sky" +
+                "\nAll other Arrows turn into Bone Arrows"); */
 		}
 
 		public override void SetDefaults()

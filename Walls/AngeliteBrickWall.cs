@@ -8,7 +8,7 @@ namespace Illuminum.Walls
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Angelite Brick Wall");
+			// DisplayName.SetDefault("Angelite Brick Wall");
 		}
 
 		public override void SetDefaults()

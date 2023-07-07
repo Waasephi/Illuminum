@@ -12,8 +12,8 @@ namespace Illuminum.Items.Weapons.Magic.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Pink Jelly Wand");
-			Tooltip.SetDefault("Shoots balls of gel that explode into electricity");
+			// DisplayName.SetDefault("Pink Jelly Wand");
+			// Tooltip.SetDefault("Shoots balls of gel that explode into electricity");
 			Item.staff[Item.type] = true;
 		}
 

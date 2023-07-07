@@ -12,7 +12,6 @@ namespace Illuminum.Tiles
 			Main.tileLighted[Type] = false;
 			Main.tileBlockLight[Type] = true;
 			AddMapEntry(new Color(122, 126, 133));
-			ItemDrop = ModContent.ItemType<QuartzBrick>();
 		}
 
 		public override void NumDust(int i, int j, bool fail, ref int num)

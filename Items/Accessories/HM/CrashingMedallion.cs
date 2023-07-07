@@ -8,9 +8,9 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Crashing Medallion");
-			Tooltip.SetDefault("Removes all flight time, but greatly boosts defensive stats" +
-                "\n'Become the immovable object'");
+			// DisplayName.SetDefault("Crashing Medallion");
+			/* Tooltip.SetDefault("Removes all flight time, but greatly boosts defensive stats" +
+                "\n'Become the immovable object'"); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

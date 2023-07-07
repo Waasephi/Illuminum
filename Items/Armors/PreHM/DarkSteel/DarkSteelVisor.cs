@@ -10,8 +10,8 @@ namespace Illuminum.Items.Armors.PreHM.DarkSteel
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Darksteel Visor");
-			Tooltip.SetDefault("+9% Ranged Crit Chance");
+			// DisplayName.SetDefault("Darksteel Visor");
+			// Tooltip.SetDefault("+9% Ranged Crit Chance");
 			ArmorIDs.Head.Sets.DrawFullHair[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = true;
 		}
 

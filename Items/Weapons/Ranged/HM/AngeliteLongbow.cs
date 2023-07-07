@@ -11,8 +11,8 @@ namespace Illuminum.Items.Weapons.Ranged.HM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Angelite Longbow"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Wooden Arrows turn into Crystal Bolts.");
+			// DisplayName.SetDefault("Angelite Longbow"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			// Tooltip.SetDefault("Wooden Arrows turn into Crystal Bolts.");
 		}
 
 		public override void SetDefaults() 
@@ -26,7 +26,7 @@ namespace Illuminum.Items.Weapons.Ranged.HM
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 2;
 			Item.value = Item.sellPrice(gold: 1, silver: 50);
-			Item.rare = ItemRarityID.Blue;
+			Item.rare = ItemRarityID.LightRed;
 			Item.shoot = ProjectileID.UnholyArrow;
 			Item.noMelee = true;
 			Item.shootSpeed = 12f;

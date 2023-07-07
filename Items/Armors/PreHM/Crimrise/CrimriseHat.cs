@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Crimrise
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Crimrise Hat");
-			Tooltip.SetDefault("+50 Mana");
+			// DisplayName.SetDefault("Crimrise Hat");
+			// Tooltip.SetDefault("+50 Mana");
 			ArmorIDs.Head.Sets.DrawHatHair[EquipLoader.GetEquipSlot(Mod, Name, EquipType.Head)] = true;
 		}
 

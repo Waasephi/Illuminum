@@ -11,12 +11,12 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Allows flight and slow fall");
+			// Tooltip.SetDefault("Allows flight and slow fall");
 
 			// Fly time: 180 ticks = 3 seconds
 			// Fly speed: 9
 			// Acceleration multiplier: 2.5
-			ArmorIDs.Wing.Sets.Stats[Item.wingSlot] = new WingStats(150, 5f, 2f);
+			ArmorIDs.Wing.Sets.Stats[Item.wingSlot] = new WingStats(200, 5f, 2f);
 		}
 
 		public override void SetDefaults()
@@ -33,8 +33,8 @@ namespace Illuminum.Items.Accessories.HM
 		{
 			ascentWhenFalling = 0.9f;
 			ascentWhenRising = 0.3f;
-			maxCanAscendMultiplier = 1.1f;
-			maxAscentMultiplier = 3f;
+			maxCanAscendMultiplier = 1f;
+			maxAscentMultiplier = 2.5f;
 			constantAscend = 0.2f;
 		}
 

@@ -29,11 +29,11 @@ namespace Illuminum.Tiles.Furniture.Angelite
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
 
 			AdjTiles = new int[] { TileID.ClosedDoor };
-			OpenDoorID/* tModPorter Note: Removed. Use TileID.Sets.OpenDoorID instead */ = ModContent.TileType<AngeliteDoorOpen>();
+            TileID.Sets.OpenDoorID[Type] = ModContent.TileType<AngeliteDoorOpen>();
 
-			// Names
-			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("Angelite Door");
+            // Names
+            LocalizedText name = CreateMapEntryName();
+			// name.SetDefault("Angelite Door");
 			AddMapEntry(new Color(238, 90, 167), name);
 
 			// Placement

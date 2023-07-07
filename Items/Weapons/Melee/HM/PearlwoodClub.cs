@@ -16,12 +16,13 @@ namespace Illuminum.Items.Weapons.Melee.HM
         public override float SwingDownSpeed => 16f;
         public override bool CollideWithTiles => true;
         static bool hasHitSomething = false;
+        static bool hasHitEnemies = false;
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Pearlwood Club");
-            Tooltip.SetDefault("Deals more damage to enemies under half health and confuses on hit" +
-                "\nHitting enemies erupts into unicorn horns");
+            // DisplayName.SetDefault("Pearlwood Club");
+            /* Tooltip.SetDefault("Deals more damage to enemies under half health and confuses on hit" +
+                "\nHitting enemies erupts into unicorn horns"); */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
@@ -45,6 +46,7 @@ namespace Illuminum.Items.Weapons.Melee.HM
         public override void UseAnimation(Player player)
         {
             hasHitSomething = false;
+            hasHitEnemies = false;
         }
 
         public override void OnHitTiles(Player player)
@@ -55,19 +57,36 @@ namespace Illuminum.Items.Weapons.Melee.HM
 
                 IlluminumPlayer.ScreenShakeAmount = 6;
 
+                if (!hasHitEnemies)
+                {
+                    Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                    player.Center.Y, 0, 0, ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                }
                 SoundEngine.PlaySound(SoundID.DD2_MonkStaffGroundMiss, player.Center);
+                for (int numProjectiles = 0; numProjectiles < 2; numProjectiles++)
+                {
+                    if (Main.netMode != NetmodeID.MultiplayerClient)
+                    {
+                        Projectile.NewProjectile(player.GetSource_ItemUse(Item), player.Center.X + (player.direction == 1 ? 90 + (Item.scale * 2) : -90 + (-Item.scale * 2)),
+                        player.Center.Y, Main.rand.Next(-2, 2), Main.rand.Next(-7, -5), ModContent.ProjectileType<UnicornSpike>(), 60, 4, Main.myPlayer, 0, 0);
+                    }
+                }
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            SoundEngine.PlaySound(new("Illuminum/Sounds/Item/Bonk"), player.position);
-            target.AddBuff(BuffID.Confused, 450);
+            if (!hasHitEnemies)
+            {
+                hasHitEnemies = true;
 
-            for (int i = 0; i < Main.rand.Next(2, 4); i++)
-                Projectile.NewProjectile(player.GetSource_ItemUse(Item), target.Center, new Vector2(Main.rand.NextFloat(-5, 5), Main.rand.NextFloat(-5, -7)), ModContent.ProjectileType<UnicornSpike>(), 60, knockBack / 2, player.whoAmI);
-            CombatText.NewText(target.getRect(), Color.Pink, "Bonk", true, false);
+                Projectile.NewProjectile(Item.GetSource_FromThis(), target.Center.X, target.Center.Y, 0, 0,
+                ModContent.ProjectileType<HMHammerHit>(), Item.damage, 0f, Main.myPlayer, 0, 0);
+                SoundEngine.PlaySound(new("Illuminum/Sounds/Item/Bonk"), player.position);
+                target.AddBuff(BuffID.Confused, 450);
 
+                CombatText.NewText(target.getRect(), Color.Pink, "Bonk", true, false);
+            }
             if (target.life <= target.lifeMax * 0.50)
             {
                 target.takenDamageMultiplier = 1.2f;

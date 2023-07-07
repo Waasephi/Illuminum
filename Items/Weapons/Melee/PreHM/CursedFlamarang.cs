@@ -15,7 +15,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cursed Flamarang");
+			// DisplayName.SetDefault("Cursed Flamarang");
 		}
 
 		public override void SetDefaults()
@@ -32,7 +32,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			Item.value = Item.sellPrice(silver: 55);
 			Item.rare = ItemRarityID.Blue;
 			Item.shootSpeed = 12f;
-			Item.shoot = ModContent.ProjectileType<CursedFlamarangProjectile>();
+			Item.shoot = ProjectileType<CursedFlamarangProjectile>();
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 		}
@@ -49,7 +49,7 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 		public override bool PreDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, ref float rotation, ref float scale, int whoAmI)
 		{
 			Texture2D texture = TextureAssets.Item[Item.type].Value;
-			Texture2D textureGlow = ModContent.Request<Texture2D>(Item.ModItem.Texture + "_Glow").Value;
+			Texture2D textureGlow = Request<Texture2D>(Item.ModItem.Texture + "_Glow").Value;
 			Rectangle frame;
 			if (Main.itemAnimations[Item.type] != null)
 				frame = Main.itemAnimations[Item.type].GetFrame(texture, Main.itemFrameCounter[whoAmI]);

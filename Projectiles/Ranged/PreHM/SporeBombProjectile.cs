@@ -8,7 +8,7 @@ namespace Illuminum.Projectiles.Ranged.PreHM
 {
     public class SporeBombProjectile : ModProjectile
     {
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Spore Bomb");
+        //public override void SetStaticDefaults() => DisplayName.SetDefault("Spore Bomb");
 
         public override void SetDefaults()
         {

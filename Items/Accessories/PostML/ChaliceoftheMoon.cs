@@ -8,10 +8,10 @@ namespace Illuminum.Items.Accessories.PostML
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Chalice of the Moon");
-			Tooltip.SetDefault("Releases Lunar Flares on taking damage," +
+			// DisplayName.SetDefault("Chalice of the Moon");
+			/* Tooltip.SetDefault("Releases Lunar Flares on taking damage," +
                 "\nIncreases all damage by 20%." +
-                "\nA Chalice with seemingly unending depth.");
+                "\nA Chalice with seemingly unending depth."); */
 		}
 		public override void SetDefaults()
 		{

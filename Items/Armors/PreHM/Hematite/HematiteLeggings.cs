@@ -10,8 +10,8 @@ namespace Illuminum.Items.Armors.PreHM.Hematite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Hematite Leggings");
-			Tooltip.SetDefault("+10% Movement Speed");
+			// DisplayName.SetDefault("Hematite Leggings");
+			// Tooltip.SetDefault("+10% Movement Speed");
 		}
 
 		public override void SetDefaults()

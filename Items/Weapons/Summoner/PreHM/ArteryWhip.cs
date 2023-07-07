@@ -13,13 +13,12 @@ namespace Illuminum.Items.Weapons.Summoner.PreHM
 {
 	public class ArteryWhip : ModItem
 	{
-
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Artery Whip");
-			Tooltip.SetDefault("Uses your life to damage foes" +
+			// DisplayName.SetDefault("Artery Whip");
+			/* Tooltip.SetDefault("Uses your life to damage foes" +
                 "\nShoots a blood stream on enemy hit" +
-				"\n'An eye for an eye'");
+				"\n'An eye for an eye'"); */
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
 
@@ -41,7 +40,8 @@ namespace Illuminum.Items.Weapons.Summoner.PreHM
 			Item.noMelee = true;
 			Item.noUseGraphic = true;
 		}
-		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 		{
 			IlluminumPlayer modPlayer = player.GetModPlayer<IlluminumPlayer>();
 			if (modPlayer.hematiteSet == false)

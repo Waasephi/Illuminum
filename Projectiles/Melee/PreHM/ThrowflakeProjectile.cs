@@ -11,7 +11,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Throwflake");
+			 // DisplayName.SetDefault("Throwflake");
 			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 8;
 			ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 		}

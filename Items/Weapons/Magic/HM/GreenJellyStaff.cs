@@ -12,8 +12,8 @@ namespace Illuminum.Items.Weapons.Magic.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Green Jelly Staff");
-			Tooltip.SetDefault("Shoots bouncing balls of electrified gel that explode into electricity");
+			// DisplayName.SetDefault("Green Jelly Staff");
+			// Tooltip.SetDefault("Shoots bouncing balls of electrified gel that explode into electricity");
 			Item.staff[Item.type] = true;
 		}
 

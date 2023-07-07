@@ -10,7 +10,7 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Gloopie");
+			// DisplayName.SetDefault("Gloopie");
 			Item.staff[Item.type] = true;
 		}
 

@@ -10,8 +10,8 @@ namespace Illuminum.Items.Armors.PreHM.DarkSteel
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Darksteel Greaves");
-			Tooltip.SetDefault("+8% Movement Speed");
+			// DisplayName.SetDefault("Darksteel Greaves");
+			// Tooltip.SetDefault("+8% Movement Speed");
 		}
 
 		public override void SetDefaults()

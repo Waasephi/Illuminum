@@ -11,9 +11,9 @@ namespace Illuminum.Items.Weapons.Summoner.HM
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Dragon Claw");
-			Tooltip.SetDefault("10 Summon Tag Damage" +
-                "\nInflicts Betsy's Curse");
+			// DisplayName.SetDefault("Dragon Claw");
+			/* Tooltip.SetDefault("10 Summon Tag Damage" +
+                "\nInflicts Betsy's Curse"); */
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
 

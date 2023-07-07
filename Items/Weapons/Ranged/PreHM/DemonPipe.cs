@@ -8,8 +8,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			 DisplayName.SetDefault("Demon Pipe");
-			 Tooltip.SetDefault("I don't know if you should put this by your mouth...");
+			 // DisplayName.SetDefault("Demon Pipe");
+			 // Tooltip.SetDefault("I don't know if you should put this by your mouth...");
 		}
 
 		public override void SetDefaults() 

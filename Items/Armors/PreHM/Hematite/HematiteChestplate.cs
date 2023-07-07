@@ -10,8 +10,8 @@ namespace Illuminum.Items.Armors.PreHM.Hematite
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Hematite Chestplate");
-			Tooltip.SetDefault("+12% Damage, +40 mana");
+			// DisplayName.SetDefault("Hematite Chestplate");
+			// Tooltip.SetDefault("+12% Damage, +40 mana");
 		}
 
 		public override void SetDefaults()

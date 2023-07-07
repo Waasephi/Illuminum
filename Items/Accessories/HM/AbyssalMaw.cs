@@ -9,12 +9,12 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Abyssal Maw");
-			Tooltip.SetDefault("Grants Immunity to knockback and most debuffs" +
+			// DisplayName.SetDefault("Abyssal Maw");
+			/* Tooltip.SetDefault("Grants Immunity to knockback and most debuffs" +
                 "\n+5% Damage Reduction" +
                 "\nAllows the player to dash into the enemy" +
                 "\nDouble tap a direction" +
-                "\n[c/4f4f4f:Embrace the Void.]"); 
+                "\n[c/4f4f4f:Embrace the Void.]"); */ 
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

@@ -8,7 +8,7 @@ namespace Illuminum.Projectiles.Melee.HM
 {
     public class UnicornSpike : ModProjectile
     {
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Unicorn Spike");
+        //public override void SetStaticDefaults() => DisplayName.SetDefault("Unicorn Spike");
 
         public override void SetDefaults()
         {

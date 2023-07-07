@@ -14,7 +14,7 @@ namespace Illuminum.Items.Weapons.Magic.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Brimstone Wave");
+			// DisplayName.SetDefault("Brimstone Wave");
 		}
 
 		public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace Illuminum.Items.Weapons.Magic.HM
 			Item.knockBack = 2;
 			Item.crit = 8;
 			Item.value = Item.sellPrice(gold: 1);
-			Item.rare = ItemRarityID.Green;
+			Item.rare = ItemRarityID.Pink;
 			Item.UseSound = SoundID.Item20;
 			Item.autoReuse = true;
 			Item.shoot = ModContent.ProjectileType<BrimstoneWave>();

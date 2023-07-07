@@ -4,13 +4,14 @@ using Terraria.ID;
 
 namespace Illuminum.Items.Accessories.PreHM
 {
-	public class SkullNecklace : ModItem
+    [AutoloadEquip(EquipType.Neck)]
+    public class SkullNecklace : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Skull Necklace");
-			Tooltip.SetDefault("Shoots Bones on taking damage." +
-                "\n'Enter the Bone Zone!'");
+			// DisplayName.SetDefault("Skull Necklace");
+			/* Tooltip.SetDefault("Shoots Bones on taking damage." +
+                "\n'Enter the Bone Zone!'"); */
 		}
 		public override void SetDefaults()
 		{

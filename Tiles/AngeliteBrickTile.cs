@@ -12,7 +12,6 @@ namespace Illuminum.Tiles
 			Main.tileLighted[Type] = false;
 			Main.tileBlockLight[Type] = true;
 			AddMapEntry(new Color(238, 90, 167));
-			ItemDrop = ModContent.ItemType<AngeliteBrick>();
 		}
 
 		public override void NumDust(int i, int j, bool fail, ref int num)

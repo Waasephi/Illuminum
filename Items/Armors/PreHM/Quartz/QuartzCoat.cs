@@ -11,8 +11,8 @@ namespace Illuminum.Items.Armors.PreHM.Quartz
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Quartz Coat");
-			Tooltip.SetDefault("+2% Damage Reduction");
+			// DisplayName.SetDefault("Quartz Coat");
+			// Tooltip.SetDefault("+2% Damage Reduction");
 		}
 
 		public override void SetDefaults()

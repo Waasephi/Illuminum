@@ -9,11 +9,11 @@ namespace Illuminum.Items.Accessories.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Frozen Quiver");
-			Tooltip.SetDefault("Cold to the touch. " +
+			// DisplayName.SetDefault("Frozen Quiver");
+			/* Tooltip.SetDefault("Cold to the touch. " +
                 "\nGives Frostbite To Ranged Weapons," +
                 "\n+20% Arrow Damage, +10% Ranged Damage," +
-                "\n20% Chance to not consume ammo.");
+                "\n20% Chance to not consume ammo."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) //Where it says "p" is the variable used to represent "player". In this case, every p stands for player. This is called when the accessory is on.

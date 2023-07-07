@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,9 +10,11 @@ namespace Illuminum.Projectiles.Melee.PreHM
 {
 	public class CursedFlamarangProjectile : ModProjectile
 	{
-		public override void SetStaticDefaults()
+        int firing = 1;
+        int fireTimer = 0;
+        public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Cursed Flamarang");
+			 // DisplayName.SetDefault("Cursed Flamarang");
 			ProjectileID.Sets.TrailCacheLength[Projectile.type] = 8;
 			ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
 		}
@@ -29,7 +32,7 @@ namespace Illuminum.Projectiles.Melee.PreHM
 			Projectile.extraUpdates = 1;
 		}
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
 			if (Main.rand.NextBool(4))
 				target.AddBuff(BuffID.CursedInferno, 60);
@@ -44,7 +47,24 @@ namespace Illuminum.Projectiles.Melee.PreHM
 				dust.scale = 2f;
 			}
 		}
-		public override bool PreDraw(ref Color lightColor)
+
+        public override void AI()
+        {
+            Projectile.rotation -= 10f;
+
+            if (firing == 1)
+            {
+                if (fireTimer == 20 * 2)
+                {
+                    Projectile.NewProjectile(Terraria.Entity.InheritSource(Projectile), Projectile.Center, new Vector2(Main.rand.NextFloat(-2, 2), Main.rand.NextFloat(-3, -5)), ProjectileID.CursedDartFlame, 30, KnockBack: 3, Projectile.whoAmI);
+                    fireTimer = 0;
+                    return;
+                }
+                fireTimer++;
+            }
+        }
+
+        public override bool PreDraw(ref Color lightColor)
 		{
 			Texture2D texture = TextureAssets.Projectile[Projectile.type].Value;
 			Texture2D glow = ModContent.Request<Texture2D>(Projectile.ModProjectile.Texture + "_Glow").Value;

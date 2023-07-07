@@ -14,8 +14,8 @@ namespace Illuminum.Items.Weapons.Summoner.HM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Dragon Wand");
-			Tooltip.SetDefault("Summons a Mini Dragon to fight for you");
+			// DisplayName.SetDefault("Dragon Wand");
+			// Tooltip.SetDefault("Summons a Mini Dragon to fight for you");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 			ItemID.Sets.GamepadWholeScreenUseRange[Item.type] = true; // This lets the player target anywhere on the whole screen while using a controller

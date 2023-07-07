@@ -18,8 +18,8 @@ namespace Illuminum.Tiles
 			AdjTiles = new int[] { TileID.WorkBenches, TileID.Furnaces, TileID.Anvils, TileID.Hellforge, TileID.TinkerersWorkbench, TileID.CookingPots, TileID.MythrilAnvil, TileID.AdamantiteForge, TileID.DemonAltar };
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
 			TileObjectData.addTile(Type);
-			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("Angelite Altar");
+			LocalizedText name = CreateMapEntryName();
+			// name.SetDefault("Angelite Altar");
 			AddMapEntry(new Color(238, 90, 167), name);
 
 			//Can't use this since texture is vertical.
@@ -43,9 +43,9 @@ namespace Illuminum.Tiles
 	{
 		public override void SetStaticDefaults()
 		{
-			 DisplayName.SetDefault("Angelite Altar");
-			 Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
-                "\nCursed Forge, Hardmode Anvils, Hardmode Forges, and Altars Included."); 
+			 // DisplayName.SetDefault("Angelite Altar");
+			 /* Tooltip.SetDefault("Combines many stations into one, used for new crafting recipes." +
+                "\nCursed Forge, Hardmode Anvils, Hardmode Forges, and Altars Included."); */ 
 		}
 
 		public override void SetDefaults()

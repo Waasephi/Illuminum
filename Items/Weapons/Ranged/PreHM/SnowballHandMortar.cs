@@ -10,8 +10,8 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Snowball Hand Mortar");
-			Tooltip.SetDefault("Shoots a spread of snowballs.");
+			// DisplayName.SetDefault("Snowball Hand Mortar");
+			// Tooltip.SetDefault("Shoots a spread of snowballs.");
 		}
 
 		public override void SetDefaults()

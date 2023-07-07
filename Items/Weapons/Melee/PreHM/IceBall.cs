@@ -13,8 +13,8 @@ namespace Illuminum.Items.Weapons.Melee.PreHM
 			ItemID.Sets.Yoyo[Item.type] = true;
 			ItemID.Sets.GamepadExtraRange[Item.type] = 15;
 			ItemID.Sets.GamepadSmartQuickReach[Item.type] = true;
-			DisplayName.SetDefault("Ice Ball");
-			Tooltip.SetDefault("Shoots a frost bolt at the cursor");
+			// DisplayName.SetDefault("Ice Ball");
+			// Tooltip.SetDefault("Shoots a frost bolt at the cursor");
 		}
 
 		public override void SetDefaults()

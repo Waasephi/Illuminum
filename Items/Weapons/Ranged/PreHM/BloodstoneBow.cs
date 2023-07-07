@@ -11,10 +11,10 @@ namespace Illuminum.Items.Weapons.Ranged.PreHM
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Bloodstone Bow");
-			Tooltip.SetDefault("Shoots 2 arrows at above half max life" +
+			// DisplayName.SetDefault("Bloodstone Bow");
+			/* Tooltip.SetDefault("Shoots 2 arrows at above half max life" +
                 "\nUsing this bow above half max life drain health" +
-                "\n'An eye for an eye'");
+                "\n'An eye for an eye'"); */
 		}
 
 		public override void SetDefaults() 

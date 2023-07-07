@@ -11,11 +11,11 @@ namespace Illuminum.Items.Armors.HM.Dragon
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Dragonscale Platemail");
-			Tooltip.SetDefault("Increased Flight Time" +
+			// DisplayName.SetDefault("Dragonscale Platemail");
+			/* Tooltip.SetDefault("Increased Flight Time" +
                 "\n+2 Max Minions" +
                 "\n+10% Whip Attack Speed" +
-                "\n+10% Melee Armor Penetration");
+                "\n+10% Melee Armor Penetration"); */
 		}
 
 		public override void SetDefaults()

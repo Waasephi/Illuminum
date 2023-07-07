@@ -8,11 +8,11 @@ namespace Illuminum.Items.Accessories.PreHM
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Mystic Arrow");
-			Tooltip.SetDefault("Its cursed." +
+			// DisplayName.SetDefault("Mystic Arrow");
+			/* Tooltip.SetDefault("Its cursed." +
                 "\n+5% Magic Damage" +
                 "\n-20% Chance to consume ammo" +
-                "\n-3% Ranged Damage.");
+                "\n-3% Ranged Damage."); */
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
